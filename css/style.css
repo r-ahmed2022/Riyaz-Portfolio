@@ -5,10 +5,9 @@
 body {
   width: 100%;
   height: 100%;
-  }
+}
 
 .container {
-  
   width: 100%;
   height: 100%;
 }
@@ -162,7 +161,6 @@ body {
   margin: 7px;
   background: white;
   border: 0;
-
 }
 
 #social-icons {
@@ -194,11 +192,11 @@ body {
 }
 
 @media All And (max-width: 500px) {
-
   body {
     margin: 0;
     padding: 0;
   }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -341,7 +339,6 @@ body {
     margin-left: 0;
     padding: 0 5px;
     flex: 1 1 25%;
-    
   }
 
   .list1 {
