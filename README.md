@@ -7,10 +7,6 @@ CSS
 
 #### Getting Started
 
-https://r-ahmed2022.github.io/Riyaz-Portfolio/
-
-#### Getting Started
-
 Instructions on how to access my project locally. To Access my project locally please follow the following instructions;
 
 Enter this url: https://github.com/r-ahmed2022/Riyaz-Portfolio in your web browser.
@@ -26,12 +22,11 @@ Select download Zip option from drop down menu.
 . Weblint
 . Stylelint
 
-Deployment
-Authors
+## Authors
 👤 Riyaz
 
-GitHub: @https://github.com/r-ahmed2022/
-LinkedIn: https://www.linkedin.com/in/riyaz-ahmed
+GitHub: [https://github.com/r-ahmed2022/] 
+LinkedIn: [https://www.linkedin.com/in/riyaz-ahmed]
 
 ### Contributing
 
@@ -42,6 +37,8 @@ Give a ⭐️ if you like this project!
 
 # Acknowledgments
 
-Hat tip to anyone whose code was used
-Inspiration
-etc
+## Microverse : 
+[https://github.com/microverseinc/curriculum-html-css/blob/main/portfolio/1_setup.md]
+
+## Figma Design:- 
+[https://www.figma.com/file/yZCGdui2Fg2zohdELsMNZL/Microverse-Student-Project-1-(Copy)?node-id=1%3A1471] 
