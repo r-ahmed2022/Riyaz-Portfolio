@@ -29,7 +29,7 @@ body {
   padding: 0;
 }
 
-.site-header > .icon {
+.site-header > .hamburger {
   display: none;
 }
 
@@ -47,10 +47,14 @@ body {
 
 .logo-text {
   display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
   width: auto;
   height: auto;
   color: #fff;
   text-decoration: none;
+  margin-left: 1em;
 }
 
 #navbar {
@@ -113,7 +117,7 @@ body {
 
 .name-text {
   color: #f55800;
-  font-family: "Crete Round", sans-serif;
+  font-family: 'Crete Round', sans-serif;
   text-align: left;
   font-style: normal;
   font-weight: 400, regular;
@@ -208,16 +212,19 @@ body {
 
   #title-text > h3 {
     margin: 2px;
-    padding: 50px;
+    padding: 35px;
   }
 
   .logo-text {
     display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
     width: auto;
     height: auto;
     color: #fff;
     text-decoration: none;
-    box-shadow: 0.5px 0.5px 0.5px 0.5px gray;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .site-header > a {
@@ -228,11 +235,23 @@ body {
     display: block;
   }
 
-  .site-header > a.icon {
+  .site-header > .hamburger  {
+    display: block;
+    margin: 5px 2em;
+    padding-top: 0.5em;
+    
+  }
+
+    .icon {
     display: block;
     position: relative;
     right: 0;
     top: 0;
+    color: white;
+  }
+
+  .icon:hover {
+    color: #f55800;
   }
 
   .site-header > #navbar {
@@ -290,7 +309,7 @@ body {
     letter-spacing: 0;
     text-align: left;
     margin: 0 20px 5px 0;
-    padding: 0 20px 5px 0;
+    padding: 0 20px 5px 8px;
   }
 
   .left-content {
