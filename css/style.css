@@ -245,7 +245,11 @@ body {
     display: block;
   }
 
-   #navbar > a.icon {
+  a.icon:hover {
+    color: #f55800;
+  }
+
+  #navbar > a.icon {
     display: block;
     position: relative;
     right: 0;
@@ -255,12 +259,8 @@ body {
     padding-bottom: 10px;
   }
 
-  a.icon:hover {
-    color: #f55800;
-  }
-
   .site-header > #navbar > a.nav-links,
-    #menu {
+  #menu {
     display: none;
   }
 
