@@ -62,6 +62,10 @@ body {
   align-items: center;
 }
 
+#navbar > a.icon {
+  display: none;
+}
+
 #navbar > a {
   display: block;
   width: 70px;
@@ -211,17 +215,18 @@ body {
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
   }
 
   #title-text > h3 {
     margin: 2px;
-    padding: 35px;
+    padding: 10px 35px;
   }
 
   .logo-text {
     display: inline-block;
     font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     font-weight: 700;
     width: auto;
     height: auto;
@@ -240,25 +245,22 @@ body {
     display: block;
   }
 
-  .site-header > .hamburger {
-    display: block;
-    margin: 5px 3em;
-    padding-top: 0.5em;
-  }
-
-  .icon {
+   #navbar > a.icon {
     display: block;
     position: relative;
     right: 0;
     top: 0;
     color: white;
+    font-size: 17px;
+    padding-bottom: 10px;
   }
 
-  .icon:hover {
+  a.icon:hover {
     color: #f55800;
   }
 
-  .site-header > #navbar {
+  .site-header > #navbar > a.nav-links,
+    #menu {
     display: none;
   }
 
