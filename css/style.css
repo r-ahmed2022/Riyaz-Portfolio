@@ -8,6 +8,8 @@ body {
 }
 
 .container {
+  margin: 10px;
+  padding: 10px;
   width: 100%;
   height: 100%;
 }
@@ -22,13 +24,9 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  color: #fff;
   background: #3e3c3c;
   padding: 0;
-}
-
-.site-header > .hamburger {
-  display: none;
 }
 
 .about-skills > div > h3 {
@@ -195,6 +193,280 @@ body {
   background: 0;
 }
 
+/* Desktop works section start */
+
+.works {
+  display: grid;
+  grid-template: repeat(4, 50px auto auto auto) / repeat(12, 1fr);
+  background: #fff;
+  margin: 20px 118px 130px 118px;
+  padding: 10px;
+  grid-gap: 3px;
+}
+
+#works-title {
+  grid-area: 1 / 1 / 2/ 13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  flex: 1 1 100%;
+}
+
+#works-title-img {
+  width: 700px;
+  height: auto;
+  padding: 10px 0 10px 10px;
+  flex: 1 1 100%;
+}
+
+.card-1 {
+  grid-area: 2/1/5/13;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  margin: 0 -5px;
+  padding: 0;
+}
+
+#card-1-img {
+  width: auto;
+  height: auto;
+}
+
+#div-1--right {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  flex: 1;
+  margin: 0 10px 5px 15px;
+  padding: 5px;
+}
+
+.works-title-text {
+  font-family: "Crete Round", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: left;
+  flex: none;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  order: 0;
+}
+
+#card-1-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+  color: black;
+  order: 0;
+  flex: 1 1 100%;
+  margin: 14px 0 10px 5px;
+  padding: 5px;
+}
+
+#skill-text {
+  display: flex;
+  width: 297px;
+  height: 40px;
+  justify-content: start;
+  align-items: center;
+  order: 1;
+  margin: 15px 0 15px 0;
+  padding: 0;
+}
+
+.about-skills-list > li {
+  text-align: left;
+  margin: 4px;
+}
+
+#skill-text > ul > li {
+  margin: 5px 5px 5px 2px;
+  padding: 5px;
+  align-self: center;
+}
+
+.read-text {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  padding: 3px;
+  border: 1px solid black;
+  color: black;
+  order: 1;
+}
+
+.div-1--right-btn {
+  background: #f55800;
+  width: 124px;
+  height: 40px;
+  margin-left: 5px;
+  order: 2;
+  border-radius: 5px;
+  flex: none;
+  cursor: pointer;
+}
+
+.card-2 {
+  grid-area: 5/1/8/13;
+  display: flex;
+  flex: 1 1 100%;
+}
+
+.card-2-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  width: 400px;
+  height: 450px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 10px 5px 0;
+  padding: 3px;
+}
+
+#card-B {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/card-B.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1 1 100%;
+}
+
+#btn-2 {
+  height: 47px;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  border-style: none;
+}
+
+.card-B-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  border: 2px solid gray;
+  background: black;
+  opacity: 0.6;
+  padding: 20px 10px;
+}
+
+.card-B-box > h4 {
+  text-align: left;
+  font-family: "Crete Round", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.card-B-para {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  color: white;
+}
+
+.btns-3 {
+  width: auto;
+  margin: 4px;
+  height: 40px;
+  background: black;
+  opacity: 0.7;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btns-3:hover {
+  background: #fff;
+  color: black;
+}
+
+.card-B-btns {
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  height: auto;
+}
+
+#card-C {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/card-c.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#card-D {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/card-2-img1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#card-E {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/card-B.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#card-F {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/card-c.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#img-1 {
+  width: auto;
+  height: calc(100% - 46px);
+  object-fit: contain;
+}
+
+.card-3 {
+  grid-area: 8/1/13/13;
+  display: flex;
+  flex: 1 1 100%;
+}
+
+/* Desktop works section end */
+
 @media All And (max-width: 500px) {
   body {
     margin: 0;
@@ -356,4 +628,193 @@ body {
     border: 0;
     margin: 5px;
   }
+
+  /*  Mobile version Works section start */
+  .works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  #works-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    margin: 2px;
+    padding: 10px;
+  }
+
+  #works-title-text-1 {
+    align-self: start;
+    font-family: "Crete Round", sans-serif;
+    font-size: 25px;
+    font-weight: 400, bold;
+    line-height: 30px;
+    color: black;
+    text-align: left;
+    letter-spacing: 0;
+    margin: 2px;
+    padding: 2px;
+  }
+
+  .works-title-text {
+    align-self: center;
+    font-family: "Crete Round", sans-serif;
+    font-size: 35px, bold;
+    font-weight: 400;
+    line-height: 30px;
+    color: black;
+    letter-spacing: 0;
+    margin: 2px;
+    padding: 2px;
+  }
+
+  #works-title-img {
+    align-self: center;
+    width: 327px;
+    height: 20px;
+    flex: 1 1 100%;
+  }
+
+  .card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .style-1 > img {
+    margin: 0;
+  }
+
+  #div-1--left > img {
+    width: 327px;
+    height: 237px;
+  }
+
+  #div-1--right {
+    width: auto;
+    height: auto;
+  }
+
+  .card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .card-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
+    background: #1c1a19;
+  }
+
+  .about-text {
+    width: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/about.svg");
+    background-size: auto 100px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    object-fit: contain;
+    padding: 30px 30px 30px 5px;
+    margin: 10px 20px 20px 0;
+  }
+
+  .about-text > h2 {
+    margin-left: 0;
+    padding: 10px 10px 10px 0;
+    text-align: left;
+  }
+
+  .about-text > button {
+    align-self: flex-start;
+  }
+
+  #about-para {
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0;
+    text-align: justify;
+  }
+
+  .about-skills {
+    width: calc(100% - 10px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    padding: 30px;
+  }
+
+  .about-skills > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .style-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-skills-list {
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .about-skills-list > li {
+    margin: 2px;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  #skill-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  /*  Mobile version works section end */
+
 }
