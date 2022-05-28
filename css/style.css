@@ -318,6 +318,7 @@ body {
 .div-1--right-btn:hover {
   background: #000;
   color: #fff;
+  transform: scale(1.2);
 }
 
 .card-2 {
