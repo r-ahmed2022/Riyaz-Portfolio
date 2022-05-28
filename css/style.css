@@ -9,7 +9,6 @@ body {
 
 .container {
   margin: 0 auto;
- 
   width: 100%;
   height: 100vh;
 }
@@ -193,7 +192,6 @@ body {
   background: 0;
 }
 
-
 /* Desktop works section start */
 
 .works {
@@ -329,7 +327,6 @@ body {
   flex: 1 1 100%;
   width: 400px;
   height: 450px;
-  
   margin: 0 10px 5px 0;
   padding: 3px;
 }
@@ -533,7 +530,6 @@ body {
   color: white;
   border-radius: 0;
   border: 0;
-  
 }
 
 .about-skills {
@@ -848,21 +844,20 @@ body {
     margin: 0 auto;
     padding: 0 30px;
     background: #1c1a19;
-      }
+  }
 
   .about-text {
-      width: auto;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      background-image: url("../images/about.svg");
-      background-size: auto 100px;
-      background-repeat: no-repeat;
-      background-position: bottom right;
-      object-fit: contain;
-      padding: 30px 30px 30px 5px;
-      margin: 10px 20px 20px 0;
-        
+    width: auto;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/about.svg");
+    background-size: auto 100px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    object-fit: contain;
+    padding: 30px 30px 30px 5px;
+    margin: 10px 20px 20px 0;
   }
 
   .about-text > h2 {
@@ -877,13 +872,13 @@ body {
     height: 48px;
     border: 0;
     color: #fff;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 17px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: center;
-     }
+  }
 
   #about-para {
     font-family: "Inter", sans-serif;
@@ -895,18 +890,17 @@ body {
     padding: 0;
   }
 
-   .divider-div {
+  .divider-div {
     background-image: url("../images/about.svg");
     background-size: auto 250px;
     background-repeat: no-repeat;
     background-position: right bottom;
     margin-bottom: 20px;
-   }
+  }
 
   #divider {
     width: 327px;
     height: 17px;
-     
   }
 
   .about-skills {
@@ -961,8 +955,6 @@ body {
     justify-content: start;
     align-items: center;
   }
+
   /*  works and about section mobile version end */
-
-  
-
 }
