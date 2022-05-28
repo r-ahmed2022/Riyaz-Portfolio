@@ -5,10 +5,11 @@
 body {
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 .container {
-  margin: 0 auto;
+  margin: 0;
   width: 100%;
   height: 100vh;
 }
@@ -26,6 +27,9 @@ body {
   color: #fff;
   background: #3e3c3c;
   padding: 0;
+  margin: 0;
+  top: 0;
+  position: fixed;
 }
 
 .about-skills > div > h3 {
@@ -492,12 +496,6 @@ body {
   flex: 1 1 100%;
 }
 
-#divider {
-  width: calc(100vw - 200px);
-  margin: 20px 10px 20px 50px;
-  align-self: start;
-}
-
 /* Desktop works section end */
 
 /*  Desktop about section start  */
@@ -507,21 +505,19 @@ body {
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 100vh;
+  height: auto;
   background: #1c1a19;
   background-image: url("../images/about.svg");
-  background-size: auto 200px;
+  background-size: auto 350px;
   background-repeat: no-repeat;
-  background-position: right;
-  object-fit: contain;
-  overflow-y: auto;
+  background-position: right center;
   margin: 20px 0;
   padding: 40px 0;
 }
 
 .about-text {
   width: 50%;
-  height: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -559,6 +555,24 @@ body {
   border-radius: 0;
   border: 0;
 }
+
+.div-seperator {
+  margin: 5px;
+  width: auto;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+ }
+
+  #divider {
+   
+   width: 1156px;
+   height: 1px;
+   align-self: flex-end;
+   text-align: center;
+ }
 
 .about-skills {
   display: flex;
@@ -617,7 +631,7 @@ body {
   .container {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
     height: auto;
     color: #fff;
   }
@@ -865,37 +879,34 @@ body {
   .about {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: stretch;
     width: 100%;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
     background: #1c1a19;
   }
 
   .about-text {
-    width: auto;
+    width: 100%;
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/about.svg");
-    background-size: auto 100px;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    object-fit: contain;
-    padding: 30px 30px 30px 5px;
-    margin: 10px 20px 20px 0;
+    
+    padding: 30px;
+    margin: 30px 50px 50px 0;
   }
 
   .about-text > h2 {
-    padding: 10px 0 0 10px;
+    padding: 10px 0 0 5px;
+    margin: 20px 0;
     text-align: left;
+    align-self: start;
   }
 
   .about-text > button {
     align-self: start;
-    align-self: stretch;
     width: 161px;
     height: 48px;
     border: 0;
@@ -915,20 +926,31 @@ body {
     line-height: 24px;
     letter-spacing: 0;
     text-align: left;
+    margin: 20px 0;
     padding: 0;
+    align-self: start;
   }
 
-  .divider-div {
-    background-image: url("../images/about.svg");
-    background-size: auto 250px;
+  .div-seperator {
+   margin: 5px;
+   width: auto;
+   height: 250px;
+   background-image: url("../images/about.svg");
+    background-size: auto 150px;
     background-repeat: no-repeat;
-    background-position: right bottom;
-    margin-bottom: 20px;
+    background-position:  top right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
   }
 
-  #divider {
-    width: 327px;
-    height: 17px;
+   #divider {
+    
+    width: 400px;
+    height: 1px;
+    align-self: flex-end;
+    text-align: center;
   }
 
   .about-skills {
@@ -949,33 +971,50 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
     padding: 5px;
   }
 
   .style-1 {
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: center;
+    margin: 0;
+  }
+
+  .style-1 > .img-3{
+    margin-right: 2px;
+  }
+
+  .style-1 > h3 {
+    font-family: "Inaimathi" , sans-serif;
+    font-weight: 700;
+    font-size: 32px;
   }
 
   .about-skills-list {
-    margin: 10px;
+    margin: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
     display: flex;
     justify-content: center;
     align-content: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: center;
+
   }
 
   .about-skills-list > li {
     margin: 2px;
     padding: 0;
     font-family: "Inter", sans-serif;
-    font-size: 22px;
     font-weight: 400;
     line-height: 35px;
     letter-spacing: 0;
-    text-align: center;
+    
   }
 
   #skill-text {
