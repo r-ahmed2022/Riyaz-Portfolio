@@ -67,6 +67,11 @@ body {
   display: none;
 }
 
+.card-B-btns > li > a {
+  text-decoration: none;
+  display: block;
+}
+
 #navbar > a {
   display: block;
   width: 70px;
@@ -151,6 +156,14 @@ body {
   font-size: 20px;
   line-height: 32px;
   margin-left: 5px;
+}
+
+.card-B-btns > ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  margin: 10px 0;
+  list-style: none;
 }
 
 #skill-text > ul {
@@ -290,6 +303,10 @@ body {
   margin: 4px;
 }
 
+.card-B-btns > ul > li {
+  margin: 5px;
+}
+
 #skill-text > ul > li {
   margin: 5px 0;
   padding: 5px;
@@ -421,25 +438,6 @@ body {
   list-style: none;
 }
 
-.card-B-btns > ul {
-  display: flex;
-  justify-content: space-between;
-  padding:  2px;
-  margin: 10px 0;
-  list-style: none;
-}
-
-.card-B-btns > ul > li
-{
-  margin: 5px;
-
-}
-
-.card-B-btns > li > a{
-  text-decoration: none;
-  display: block;
-}
-
 #card-C {
   display: flex;
   flex-direction: column;
@@ -564,15 +562,14 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: end;
- }
+}
 
-  #divider {
-   
-   width: 1156px;
-   height: 1px;
-   align-self: flex-end;
-   text-align: center;
- }
+#divider {
+  width: 1156px;
+  height: 1px;
+  align-self: flex-end;
+  text-align: center;
+}
 
 .about-skills {
   display: flex;
@@ -643,6 +640,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: end;
+  }
+
+  .style-1 > h3 {
+    font-family: "Inaimathi", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
   }
 
   #title-text > h3 {
@@ -893,7 +896,6 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    
     padding: 30px;
     margin: 30px 50px 50px 0;
   }
@@ -932,21 +934,20 @@ body {
   }
 
   .div-seperator {
-   margin: 5px;
-   width: auto;
-   height: 250px;
-   background-image: url("../images/about.svg");
+    margin: 5px;
+    width: auto;
+    height: 250px;
+    background-image: url("../images/about.svg");
     background-size: auto 150px;
     background-repeat: no-repeat;
-    background-position:  top right;
+    background-position: top right;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
   }
 
-   #divider {
-    
+  #divider {
     width: 400px;
     height: 1px;
     align-self: flex-end;
@@ -977,19 +978,13 @@ body {
 
   .style-1 {
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     margin: 0;
   }
 
-  .style-1 > .img-3{
+  .style-1 > .img-3 {
     margin-right: 2px;
-  }
-
-  .style-1 > h3 {
-    font-family: "Inaimathi" , sans-serif;
-    font-weight: 700;
-    font-size: 32px;
   }
 
   .about-skills-list {
@@ -999,12 +994,11 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-    font-family: Inter;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     font-weight: 400;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
-
   }
 
   .about-skills-list > li {
@@ -1014,7 +1008,6 @@ body {
     font-weight: 400;
     line-height: 35px;
     letter-spacing: 0;
-    
   }
 
   #skill-text {
