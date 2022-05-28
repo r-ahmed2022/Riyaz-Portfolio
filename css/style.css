@@ -315,6 +315,11 @@ body {
   border: 0;
 }
 
+.div-1--right-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
 .card-2 {
   grid-area: 5/1/8/13;
   display: flex;
@@ -387,13 +392,15 @@ body {
 
 .btns-3 {
   width: auto;
-  margin: 4px;
+  margin: 4px 0;
   height: 40px;
   background: gray;
   opacity: 0.9;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
+  padding: 8px 15px;
+  text-decoration: none;
 }
 
 .btns-3:hover {
@@ -403,9 +410,29 @@ body {
 
 .card-B-btns {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: start;
   width: auto;
   height: auto;
+  list-style: none;
+}
+
+.card-B-btns > ul {
+  display: flex;
+  justify-content: space-between;
+  padding:  2px;
+  margin: 10px 0;
+  list-style: none;
+}
+
+.card-B-btns > ul > li
+{
+  margin: 5px;
+
+}
+
+.card-B-btns > li > a{
+  text-decoration: none;
+  display: block;
 }
 
 #card-C {
