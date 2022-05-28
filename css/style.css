@@ -5,11 +5,13 @@
 body {
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 .container {
+  margin: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 }
 
 #title-text {
@@ -22,13 +24,12 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  color: white;
+  color: #fff;
   background: #3e3c3c;
   padding: 0;
-}
-
-.site-header > .hamburger {
-  display: none;
+  margin: 0;
+  top: 0;
+  position: fixed;
 }
 
 .about-skills > div > h3 {
@@ -64,6 +65,11 @@ body {
 
 #navbar > a.icon {
   display: none;
+}
+
+.card-B-btns > li > a {
+  text-decoration: none;
+  display: block;
 }
 
 #navbar > a {
@@ -152,6 +158,14 @@ body {
   margin-left: 5px;
 }
 
+.card-B-btns > ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px;
+  margin: 10px 0;
+  list-style: none;
+}
+
 #skill-text > ul {
   display: flex;
   list-style: none;
@@ -195,6 +209,416 @@ body {
   background: 0;
 }
 
+/* Desktop works section start */
+
+.works {
+  display: grid;
+  grid-template: repeat(4, 50px auto auto auto) / repeat(12, 1fr);
+  background: #fff;
+  margin: 20px 118px 130px 118px;
+  padding: 10px;
+  grid-gap: 3px;
+}
+
+#works-title {
+  grid-area: 1 / 1 / 2/ 13;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  flex: 1 1 100%;
+}
+
+#works-title-img {
+  width: 700px;
+  height: auto;
+  padding: 10px 0 10px 10px;
+  flex: 1 1 100%;
+}
+
+.card-1 {
+  grid-area: 2/1/5/13;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  margin: 0 -5px;
+  padding: 0;
+}
+
+#card-1-img {
+  width: auto;
+  height: auto;
+}
+
+#div-1--right {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  height: auto;
+  flex: 1;
+  margin: 0 10px 5px 15px;
+  padding: 5px;
+}
+
+.works-title-text {
+  font-family: "Crete Round", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0;
+  text-align: left;
+  flex: none;
+  margin-bottom: 5px;
+  padding-bottom: 10px;
+  order: 0;
+}
+
+#card-1-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+  color: black;
+  order: 0;
+  flex: 1 1 100%;
+  margin: 14px 0 5px 5px;
+  padding: 5px;
+}
+
+#skill-text {
+  display: flex;
+  width: 297px;
+  height: 40px;
+  justify-content: start;
+  align-items: center;
+  order: 1;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.about-skills-list > li {
+  text-align: left;
+  margin: 4px;
+}
+
+.card-B-btns > ul > li {
+  margin: 5px;
+}
+
+#skill-text > ul > li {
+  margin: 5px 0;
+  padding: 5px;
+  align-self: center;
+}
+
+.read-text {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid gray;
+  color: black;
+  order: 1;
+}
+
+.div-1--right-btn {
+  background: #f55800;
+  width: 124px;
+  height: 40px;
+  margin-left: 5px;
+  order: 2;
+  color: #fff;
+  flex: none;
+  cursor: pointer;
+  border: 0;
+}
+
+.div-1--right-btn:hover {
+  background: #000;
+  color: #fff;
+  transform: scale(1.2);
+}
+
+.card-2 {
+  grid-area: 5/1/8/13;
+  display: flex;
+  flex: 1 1 100%;
+}
+
+.card-2-1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  width: 400px;
+  height: 450px;
+  margin: 0 10px 5px 0;
+  padding: 3px;
+}
+
+#card-B {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/card-B.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 1 1 100%;
+}
+
+#btn-2 {
+  height: 47px;
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  border-style: none;
+}
+
+.card-B-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  border: 2px solid gray;
+  background: black;
+  opacity: 0.6;
+  padding: 20px 10px;
+}
+
+.card-B-box > h4 {
+  text-align: left;
+  font-family: "Crete Round", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.card-B-para {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+  color: white;
+}
+
+.btns-3 {
+  width: auto;
+  margin: 4px 0;
+  height: 40px;
+  background: gray;
+  opacity: 0.9;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px 15px;
+  text-decoration: none;
+}
+
+.btns-3:hover {
+  background: #fff;
+  color: black;
+}
+
+.card-B-btns {
+  display: flex;
+  justify-content: start;
+  width: auto;
+  height: auto;
+  list-style: none;
+}
+
+#card-C {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/card-c.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#card-D {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/card-2-img1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#card-E {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/card-B.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#card-F {
+  display: flex;
+  flex-direction: column;
+  background: url("../images/card-c.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#img-1 {
+  width: auto;
+  height: calc(100% - 46px);
+  object-fit: contain;
+}
+
+.card-3 {
+  grid-area: 8/1/13/13;
+  display: flex;
+  flex: 1 1 100%;
+}
+
+/* Desktop works section end */
+
+/*  Desktop about section start  */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background: #1c1a19;
+  background-image: url("../images/about.svg");
+  background-size: auto 350px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  margin: 20px 0;
+  padding: 40px 0;
+}
+
+.about-text {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 100%;
+  margin: 50px;
+  padding-bottom: 10px;
+  margin-bottom: 100px;
+}
+
+.about-text > h2 {
+  color: #f55800;
+  font-family: "Crete Round", sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 82px;
+  letter-spacing: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+#about-para {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  margin: 0 20px 20px 10px;
+  padding-right: 50px;
+}
+
+#btn-about {
+  color: white;
+  border-radius: 0;
+  border: 0;
+}
+
+.div-seperator {
+  margin: 5px;
+  width: auto;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+#divider {
+  width: 1156px;
+  height: 1px;
+  align-self: flex-end;
+  text-align: center;
+}
+
+.about-skills {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  height: auto;
+  align-items: start;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.about-skills-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  color: white;
+  list-style: none;
+  margin: 5px;
+}
+
+.about-skills > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+
+.about-skills > div > .style-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  padding: 5px;
+  color: white;
+}
+
+.img-3 {
+  width: 10px;
+  height: 15px;
+  margin: 3px;
+}
+
+/*  Desktop about ends */
+
 @media All And (max-width: 500px) {
   body {
     margin: 0;
@@ -204,7 +628,7 @@ body {
   .container {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto;
     height: auto;
     color: #fff;
   }
@@ -216,6 +640,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: end;
+  }
+
+  .style-1 > h3 {
+    font-family: "Inaimathi", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
   }
 
   #title-text > h3 {
@@ -356,4 +786,235 @@ body {
     border: 0;
     margin: 5px;
   }
+
+  /*  Mobile version Works section start */
+  .works {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 5px;
+    padding: 5px;
+  }
+
+  #works-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    margin: 2px;
+    padding: 10px;
+  }
+
+  #works-title-text-1 {
+    align-self: start;
+    font-family: "Crete Round", sans-serif;
+    font-size: 25px;
+    font-weight: 400, bold;
+    line-height: 30px;
+    color: black;
+    text-align: left;
+    letter-spacing: 0;
+    margin: 2px;
+    padding: 2px;
+  }
+
+  .works-title-text {
+    align-self: center;
+    font-family: "Crete Round", sans-serif;
+    font-size: 35px, bold;
+    font-weight: 400;
+    line-height: 30px;
+    color: black;
+    letter-spacing: 0;
+    margin: 2px;
+    padding: 2px;
+  }
+
+  #works-title-img {
+    align-self: center;
+    width: 327px;
+    height: 20px;
+    flex: 1 1 100%;
+  }
+
+  .card-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .style-1 > img {
+    margin: 0;
+  }
+
+  #div-1--left > img {
+    width: 327px;
+    height: 237px;
+  }
+
+  #div-1--right {
+    width: auto;
+    height: auto;
+  }
+
+  .card-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .card-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #1c1a19;
+  }
+
+  .about-text {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 30px 50px 50px 0;
+  }
+
+  .about-text > h2 {
+    padding: 10px 0 0 5px;
+    margin: 20px 0;
+    text-align: left;
+    align-self: start;
+  }
+
+  .about-text > button {
+    align-self: start;
+    width: 161px;
+    height: 48px;
+    border: 0;
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+
+  #about-para {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    margin: 20px 0;
+    padding: 0;
+    align-self: start;
+  }
+
+  .div-seperator {
+    margin: 5px;
+    width: auto;
+    height: 250px;
+    background-image: url("../images/about.svg");
+    background-size: auto 150px;
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+  }
+
+  #divider {
+    width: 400px;
+    height: 1px;
+    align-self: flex-end;
+    text-align: center;
+  }
+
+  .about-skills {
+    width: calc(100% - 10px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    padding: 30px;
+  }
+
+  .about-skills > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5px;
+  }
+
+  .style-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .style-1 > .img-3 {
+    margin-right: 2px;
+  }
+
+  .about-skills-list {
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .about-skills-list > li {
+    margin: 2px;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0;
+  }
+
+  #skill-text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  /*  works and about section mobile version end */
 }
