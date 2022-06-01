@@ -43,7 +43,7 @@
           <a class="nav-links" href="#">About</a>
           <a class="nav-links" href="#">Contact</a>
           <a><i id="menu" class="material-icons">mail</i></a>
-          <a href="javascript:void(0);" class="icon">
+          <a href="javascript:void(0);" class="icon" id="mail-icon">
           <i class="fa fa-bars"></i>
         </a>
         </nav>
@@ -296,8 +296,30 @@
             </div>
             </div>
             </section>
-        
-    
+        <!--- contact form section -->
+
+        <section id="contact-form">
+            <form id="form-1" action="https://formspree.io/f/{form_id}" method="post">
+
+              <h2 id="contact-form-text">
+                I'm always <br> interested in hearing <br> about new projects,<br> 
+                so if you'd like to <br> chat please get in touch.
+              </h2>
+               <div id="form-field-container">
+                 <input type="email" name="email-field" id="email-field" placeholder="Email address" required>
+                 <input type="text" name="fname" placeholder="Full Name" required maxlength="30">
+               </div>
+               <div id="form-comments-section">
+                <textarea id="comments" maxlength="500"  placeholder="Enter Text here" required></textarea>
+                <button class="div-1--right-btn">Get in touch </button>
+              </div>
+
+            </form>
+
+
+        </section>
+
+        <!---     contact form section  ends-->
 
           </div>
   </body>

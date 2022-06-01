@@ -81,6 +81,11 @@ body {
   margin: 3px;
 }
 
+#mail-icon {
+background: 0;
+border: 0;
+}
+
 #home-content {
   display: flex;
   width: 100%;
@@ -1017,4 +1022,94 @@ body {
   }
 
   /*  works and about section mobile version end */
+
+
+  /*  contact form mobile section */
+
+  #contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+   padding: 20px 10px;
+  }
+
+  #form-1 {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+  }
+
+  #contact-form-text {
+    margin: 20px 0;
+    color: #000;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+   padding: 15px 5px;
+
+  }
+
+ #form-field-container {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+ }
+
+ #form-comments-section {
+   width: 100%;
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ #form-comments-section > button {
+   width: 131px;
+   height: 40px;
+   align-self: center;
+   margin: 15px 15px 40px 15px;
+   border: none;
+   font-weight: 700;
+  
+ }
+
+ input[type=email],
+ input[type=text] {
+   width: 80%;
+   height: 48px;
+   font-size: 15px;
+   padding: 10px;
+   margin: 10px auto;
+   border: 0;
+   border-bottom: 2px;
+   border-bottom: 1px solid lightgray;
+   
+ }
+
+ input[type=email] {
+   order: 1;
+ }
+
+#comments {
+  border: none;
+  width: 80%;
+  height: 114px;
+  font-size: 15px;
+  margin-bottom:10px;
+  padding: 10px;
+  background: #FBF8F7;
+}
+
+  /* contact form mobile section sends */
 }
