@@ -82,8 +82,8 @@ body {
 }
 
 #mail-icon {
-background: 0;
-border: 0;
+  background: 0;
+  border: 0;
 }
 
 #home-content {
@@ -1033,7 +1033,7 @@ border: 0;
     align-items: center;
     width: 100%;
     height: auto;
-   padding: 20px 10px;
+    padding: 20px 10px;
   }
 
   #form-1 {
@@ -1049,67 +1049,64 @@ border: 0;
   #contact-form-text {
     margin: 20px 0;
     color: #000;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 32px;
     font-weight: 700;
     line-height: 44px;
-    letter-spacing: 0em;
+    letter-spacing: 0;
     text-align: center;
-   padding: 15px 5px;
-
+    padding: 15px 5px;
   }
 
- #form-field-container {
-   width: 100%;
-   height: auto;
-   display: flex;
-   flex-direction: column;
- }
+  #form-field-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
 
- #form-comments-section {
-   width: 100%;
-   height: auto;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
- }
+  #form-comments-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
- #form-comments-section > button {
-   width: 131px;
-   height: 40px;
-   align-self: center;
-   margin: 15px 15px 40px 15px;
-   border: none;
-   font-weight: 700;
-  
- }
+  #form-comments-section > button {
+    width: 131px;
+    height: 40px;
+    align-self: center;
+    margin: 15px 15px 40px 15px;
+    border: none;
+    font-weight: 700;
+  }
 
- input[type=email],
- input[type=text] {
-   width: 80%;
-   height: 48px;
-   font-size: 15px;
-   padding: 10px;
-   margin: 10px auto;
-   border: 0;
-   border-bottom: 2px;
-   border-bottom: 1px solid lightgray;
-   
- }
+  input[type=email],
+  input[type=text] {
+    width: 80%;
+    height: 48px;
+    font-size: 15px;
+    padding: 10px;
+    margin: 10px auto;
+    border: 0;
+    border-bottom: 2px;
+    border-bottom: 1px solid lightgray;
+  }
 
- input[type=email] {
-   order: 1;
- }
+  input[type=email] {
+    order: 1;
+  }
 
-#comments {
-  border: none;
-  width: 80%;
-  height: 114px;
-  font-size: 15px;
-  margin-bottom:10px;
-  padding: 10px;
-  background: #FBF8F7;
-}
+  #comments {
+    border: none;
+    width: 80%;
+    height: 114px;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fbf8f7;
+  }
 
   /* contact form mobile section sends */
 
@@ -1147,7 +1144,5 @@ border: 0;
     margin: 0;
     align-self: center;
   }
-
-
   /* footer section ends */
 }
