@@ -624,6 +624,81 @@ body {
 }
 
 /*  Desktop about ends */
+/* Desktop contact form start */
+
+#contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 20px;
+  padding: 20px 50px;
+}
+
+#form-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: minmax(100px, auto) minmax(150px, auto);
+  grid-gap: 4px 5px;
+  }
+
+#contact-form-text {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  letter-spacing: 0;
+  padding: 0 30px;
+  margin: 0;
+  text-align: left;
+  align-self: start;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+#form-field-container {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+}
+
+#form-field-container > input[type=text],
+input[type=email] {
+  width: 100%;
+  height: 48px;
+  margin: 2px 0;
+  font-size: 17px;
+  border: none;
+  border-bottom: 1px solid lightgray;
+}
+
+#form-comments-section {
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#comments {
+  margin: 2px 0;
+  flex: 1 1 100%;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+#btn-5 {
+  height: 40px;
+  color: white;
+  margin-top: 5px;
+}
+
+#footer-section {
+  display: none;
+}
 
 @media All And (max-width: 500px) {
   body {
@@ -1036,7 +1111,7 @@ body {
   }
 
   #form-1 {
-    width: 90%;
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -1060,16 +1135,12 @@ body {
   #form-field-container {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-  }
+    }
 
   #form-comments-section {
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
   }
 
   #form-comments-section > button {
@@ -1083,23 +1154,21 @@ body {
 
   input[type=email],
   input[type=text] {
-    width: 80%;
+    width: 100%;
     height: 48px;
     font-size: 15px;
     padding: 10px;
     margin: 10px auto;
-    border: 0;
-    border-bottom: 2px;
     border-bottom: 1px solid lightgray;
-  }
+     }
 
-  input[type=email] {
+    input[type=email] {
     order: 1;
   }
 
-  #comments {
+ #comments {
     border: none;
-    width: 80%;
+    width: 100%;
     height: 114px;
     font-size: 15px;
     margin-bottom: 10px;
