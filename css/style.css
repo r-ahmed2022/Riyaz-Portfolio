@@ -16,7 +16,7 @@ body {
 }
 
 @media (min-width: 500px) {
-    #title-text {
+  #title-text {
     color: #fff;
   }
 
@@ -600,11 +600,6 @@ body {
     padding-left: 0;
   }
 
-  .about-skills-list > li {
-   margin: 10px 0;
-   padding: 0;
-  }
-
   .about-skills > div {
     display: flex;
     flex-direction: column;
@@ -629,7 +624,7 @@ body {
     width: 10px;
     height: 15px;
     margin: 3px;
-    }
+  }
 
   /*  Desktop about ends */
 
@@ -788,7 +783,7 @@ body {
     font-size: 32px;
   }
 
-   #title-text > h3 {
+  #title-text > h3 {
     margin: 2px;
     padding: 10px 35px;
   }
