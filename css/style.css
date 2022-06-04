@@ -700,6 +700,12 @@ body {
     border-bottom: 1px solid lightgray;
   }
 
+  #form-field-container > input[type=email]:hover,
+  input[type=text]:hover {
+    padding-top: 10px;
+    transition-duration: 0.2s;
+  }
+
   #form-comments-section {
     grid-column: 2 / -1;
     grid-row: 2 / 3;
