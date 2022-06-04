@@ -56,9 +56,15 @@ body {
     color: #fff;
     text-decoration: none;
     margin-left: 1em;
-  }
+    
+     }
 
-  #navbar {
+     .logo-text:hover {
+      transform: rotate(270deg);
+      transition: ease-in-out 4s;
+     }
+
+    #navbar {
     margin-left: auto;
     display: flex;
     justify-content: center;
@@ -682,6 +688,7 @@ body {
     font-size: 17px;
     border: none;
     border-bottom: 1px solid lightgray;
+    cursor: pointer;
   }
 
   #form-field-container > #lname {
@@ -692,6 +699,7 @@ body {
     font-size: 17px;
     border: none;
     border-bottom: 1px solid lightgray;
+    cursor: pointer;
   }
 
   #form-field-container > input[type=email] {
@@ -702,6 +710,12 @@ body {
     font-size: 17px;
     border: none;
     border-bottom: 1px solid lightgray;
+    cursor: pointer;
+  }
+
+  #form-field-container > input[type=email]:hover, input[type=text]:hover {
+    padding-top: 10px;
+    transition-duration: 0.2s;
   }
 
   #form-comments-section {
@@ -719,6 +733,7 @@ body {
     padding-left: 3px;
     border: none;
     background: #fbf8f7;
+    cursor: pointer;
   }
 
   #btn-5 {
@@ -1218,6 +1233,7 @@ body {
     font-size: 15px;
     padding: 10px;
     border-bottom: 1px solid lightgray;
+    cursor: pointer;
   }
 
   input[type=email] {
@@ -1228,6 +1244,11 @@ body {
     display: none;
   }
 
+  #form-field-container > input[type=email]:hover, input[type=text]:hover {
+    padding-top: 10px;
+    transition-duration: 0.2s;
+  }
+
   #comments {
     border: none;
     width: 100%;
@@ -1236,6 +1257,14 @@ body {
     margin-bottom: 10px;
     padding: 10px;
     background: #fbf8f7;
+    cursor: pointer;
+    transition-duration: 0.2s;
+  }
+  }
+
+  #comments:hover {
+    padding-top: 10px;
+    transition-duration: 0.2s;
   }
 
   /* contact form mobile section sends */
