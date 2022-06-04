@@ -42,7 +42,11 @@
           <a class="nav-links" href="#">Portfolio</a>
           <a class="nav-links" href="#">About</a>
           <a class="nav-links" href="#">Contact</a>
-          <a><i id="menu" class="material-icons">mail</i></a>
+         <!----
+         <i id="menu" class="material-icons">mail</i></a>
+         <a href="#" id="menu">&#9993;</a>
+        ---> 
+         <a href="#" id="menu"><img src="images/mail.svg" alt="projects"></a>
           <a href="javascript:void(0);" class="icon">
           <i class="fa fa-bars"></i>
         </a>
@@ -108,7 +112,8 @@
             </ul>
           </div>
         </div>
-      
+          <div class="right-content">
+          </div>
         </section>
 
         <section class="works">
@@ -238,7 +243,7 @@
             
           </section>
           <section class="about">
-
+            
             <div class="about-text">
                <h2>
                 About me
@@ -303,10 +308,11 @@
                       I'm always <br> interested in hearing <br>about new projects, <br>
                       so if you'd like to <br> chat please get in 
                       </h2>
-                        <div id="form-field-container">
-                        <input type="email" name="email-field" id="email-field" placeholder="Email address" required maxlength="30">
-                        <input type="text" name="fname" id="fname" placeholder="Full Name" required maxlength="30">
-                        </div>
+                          <div id="form-field-container">
+                          <input type="text" name="fname" id="fname" placeholder="First Name" required maxlength="30">
+                          <input type="text" name="lname" id="lname" placeholder="Last Name" required maxlength="30">
+                          <input type="email" name="email-field" id="email-field" placeholder="Email address" required maxlength="30">
+                          </div>
                         <div id="form-comments-section">
                         <textarea id="comments" maxlength="500" placeholder="Enter Text here" rows="3" name="comments" required></textarea>
                         <button class="div-1--right-btn" id="btn-5" type="submit">Get in Touch</button>
