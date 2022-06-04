@@ -16,7 +16,7 @@ body {
 }
 
 @media (min-width: 500px) {
-    #title-text {
+  #title-text {
     color: #fff;
   }
 
@@ -56,15 +56,14 @@ body {
     color: #fff;
     text-decoration: none;
     margin-left: 1em;
-    
-     }
+  }
 
-     .logo-text:hover {
-      transform: rotate(270deg);
-      transition: ease-in-out 4s;
-     }
+  .logo-text:hover {
+    transform: rotate(270deg);
+    transition: ease-in-out 4s;
+  }
 
-    #navbar {
+  #navbar {
     margin-left: auto;
     display: flex;
     justify-content: center;
@@ -313,7 +312,8 @@ body {
 
   .about-skills-list > li {
     text-align: left;
-    margin: 4px;
+    margin: 10px 0;
+    padding: 0;
   }
 
   .card-B-btns > ul > li {
@@ -605,11 +605,6 @@ body {
     margin: 5px;
   }
 
-  .about-skills-list > li {
-   margin: 10px 0;
-   padding: 0;
-  }
-
   .about-skills > div {
     display: flex;
     flex-direction: column;
@@ -634,7 +629,7 @@ body {
     width: 10px;
     height: 15px;
     margin: 3px;
-    }
+  }
 
   /*  Desktop about ends */
 
@@ -713,7 +708,8 @@ body {
     cursor: pointer;
   }
 
-  #form-field-container > input[type=email]:hover, input[type=text]:hover {
+  #form-field-container > input[type=email]:hover,
+  input[type=text]:hover {
     padding-top: 10px;
     transition-duration: 0.2s;
   }
@@ -802,7 +798,7 @@ body {
     font-size: 32px;
   }
 
-   #title-text > h3 {
+  #title-text > h3 {
     margin: 2px;
     padding: 10px 35px;
   }
@@ -1244,7 +1240,8 @@ body {
     display: none;
   }
 
-  #form-field-container > input[type=email]:hover, input[type=text]:hover {
+  #form-field-container > input[type=email]:hover,
+  input[type=text]:hover {
     padding-top: 10px;
     transition-duration: 0.2s;
   }
@@ -1259,7 +1256,6 @@ body {
     background: #fbf8f7;
     cursor: pointer;
     transition-duration: 0.2s;
-  }
   }
 
   #comments:hover {
