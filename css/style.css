@@ -529,6 +529,7 @@ body {
     flex: 1 1 100%;
     margin: 50px;
     padding-bottom: 10px;
+    padding-left: 10px;
     margin-bottom: 100px;
   }
 
@@ -644,7 +645,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: minmax(100px, auto) minmax(150px, auto);
     grid-gap: 4px 5px;
-    padding-left: 20px;
+    padding-left: 27px;
   }
 
   #contact-form-text {
