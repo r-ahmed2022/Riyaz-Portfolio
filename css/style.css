@@ -307,7 +307,11 @@ body {
 
   .about-skills-list > li {
     text-align: left;
-    margin: 4px;
+    margin: 10px 4px;
+  }
+
+  .about-skills-list > li:first-child{
+    margin-top: 0;
   }
 
   .card-B-btns > ul > li {
@@ -615,7 +619,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 30px;
+    margin: 20px 30px;
     padding: 5px;
     color: #fff;
   }
