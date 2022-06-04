@@ -516,8 +516,8 @@ body {
     background-size: auto 350px;
     background-repeat: no-repeat;
     background-position: right center;
-    margin: 20px 0;
-    padding: 40px 0;
+    margin: 20px 0 10px;
+    padding: 40px 60px;
   }
 
   .about-text {
@@ -563,6 +563,7 @@ body {
 
   .div-seperator {
     margin: 5px;
+    padding-left: 45px;
     width: auto;
     height: 250px;
     display: flex;
@@ -584,7 +585,7 @@ body {
     width: 100%;
     height: auto;
     align-items: start;
-    padding: 0;
+    padding: 0 20px;
     margin: 20px 0;
   }
 
@@ -596,6 +597,11 @@ body {
     color: white;
     list-style: none;
     margin: 5px;
+  }
+
+  .about-skills-list > li {
+   margin: 10px 0;
+   padding: 0;
   }
 
   .about-skills > div {
@@ -611,18 +617,18 @@ body {
 
   .about-skills > div > .style-1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 30px;
     padding: 5px;
-    color: white;
+    color: #fff;
   }
 
   .img-3 {
     width: 10px;
     height: 15px;
     margin: 3px;
-  }
+    }
 
   /*  Desktop about ends */
 
@@ -781,7 +787,7 @@ body {
     font-size: 32px;
   }
 
-  #title-text > h3 {
+   #title-text > h3 {
     margin: 2px;
     padding: 10px 35px;
   }
@@ -1135,7 +1141,7 @@ body {
   }
 
   .about-skills-list > li {
-    margin: 2px;
+    margin: 10px 0;
     padding: 0;
     font-family: "Inter", sans-serif;
     font-weight: 400;
