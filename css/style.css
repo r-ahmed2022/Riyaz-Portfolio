@@ -310,10 +310,6 @@ body {
     margin: 10px 4px;
   }
 
-  .about-skills-list > li:first-child{
-    margin-top: 0;
-  }
-
   .card-B-btns > ul > li {
     margin: 5px;
   }
