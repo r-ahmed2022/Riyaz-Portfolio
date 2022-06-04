@@ -665,7 +665,7 @@ body {
   }
 
   ::placeholder {
-    color: black;
+    color: #000;
   }
 
   #form-field-container {
