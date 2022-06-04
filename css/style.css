@@ -582,7 +582,7 @@ body {
 
   .about-skills {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     width: 100%;
     height: auto;
     align-items: start;
