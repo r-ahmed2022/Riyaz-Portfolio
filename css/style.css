@@ -22,6 +22,7 @@ body {
 
   .site-header {
     width: 100%;
+    
     height: 72px;
     display: flex;
     justify-content: space-around;
@@ -634,32 +635,37 @@ body {
   #contact-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     height: auto;
     margin: 20px;
-    padding: 20px 50px;
+    padding: 100px 50px 20px;
   }
 
   #form-1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(100px, auto) minmax(150px, auto);
-    grid-gap: 4px 5px;
-    padding-left: 27px;
+    grid-template-columns: minmax(200px, auto) minmax(400px , 1fr);
+    grid-auto-rows: minmax(50px, 1fr);
+    grid-column-gap: 40px;
+    padding-left: 20px;
+    justify-content: start;
+    align-self:stretch;
   }
 
   #contact-form-text {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
     letter-spacing: 0;
-    padding: 0 30px;
-    margin: 0;
-    text-align: left;
-    align-self: start;
+    padding: 0 10px;
+    margin: 0 20px;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
+    
+  }
+
+  ::placeholder {
+    color: black;
   }
 
   #form-field-container {
@@ -667,15 +673,15 @@ body {
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: minmax(100px, auto) minmax(100px, auto);
-    grid-gap: 2px 6px;
+    grid-template-rows: minmax(1.5em, auto);
+    grid-column-gap: 10px;
   }
 
   #form-field-container > #fname {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    height: 48px;
-    margin: 2px 0;
+    height: 40px;
+    margin: 2px 4px;
     font-size: 17px;
     border: none;
     border-bottom: 1px solid lightgray;
@@ -684,8 +690,8 @@ body {
   #form-field-container > #lname {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
-    height: 48px;
-    margin: 2px 0;
+    height: 40px;
+    margin: 2px 4px;
     font-size: 17px;
     border: none;
     border-bottom: 1px solid lightgray;
@@ -694,8 +700,9 @@ body {
   #form-field-container > input[type=email] {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    height: 48px;
+    height: 40px;
     margin: 2px 0;
+    padding: 0;
     font-size: 17px;
     border: none;
     border-bottom: 1px solid lightgray;
@@ -712,22 +719,27 @@ body {
     grid-row: 2 / 3;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-  }
+    justify-content: space-evenly;
+    }
 
   #comments {
     margin: 2px 0;
-    flex: 1 1 100%;
     padding-top: 3px;
     padding-left: 3px;
     border: none;
+    padding-bottom: 3.5em;
+    font-size: 17px;
     background: #fbf8f7;
+    align-self: stretch;
+    
   }
 
   #btn-5 {
     height: 40px;
     color: white;
     margin-top: 5px;
+    font-size: 17px;
+    font-weight: 700;
   }
 
   /* footer section starts */
@@ -741,8 +753,8 @@ body {
     border-top: 2px solid lightgray;
     margin-top: 400px;
     margin-bottom: 0;
-    flex-wrap: wrap;
-  }
+    padding: 0;
+    }
 
   #footer-section > ul {
     display: flex;
@@ -750,7 +762,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-  }
+    }
 
   #footer-section > ul > li {
     float: left;
