@@ -1261,7 +1261,7 @@ input[type=text]:hover {
     margin-top: 20px;
     border-bottom: 1px solid lightgray;
     order: 1;
-    }
+  }
 
   #lname {
     display: none;
