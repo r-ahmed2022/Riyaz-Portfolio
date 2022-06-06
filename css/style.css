@@ -777,7 +777,7 @@ input[type=text]:hover {
   .container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    width: 100%;
     height: auto;
     color: #fff;
   }
@@ -1215,7 +1215,7 @@ input[type=text]:hover {
   }
 
   #form-field-container {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1224,7 +1224,7 @@ input[type=text]:hover {
   }
 
   #form-comments-section {
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 
