@@ -945,14 +945,14 @@ input[type=text]:hover {
     margin: 0 auto;
     height: auto;
     padding: 15px;
-      }
+  }
 
   #works-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-     height: auto;
+    height: auto;
     padding: 10px 0;
   }
 
@@ -993,7 +993,6 @@ input[type=text]:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
   }
 
   .style-1 > img {
@@ -1008,7 +1007,7 @@ input[type=text]:hover {
   #div-1--left {
     width: 100%;
     height: auto;
-    }
+  }
 
   #div-1--right {
     width: 100%;
