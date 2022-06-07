@@ -938,26 +938,30 @@ input[type=text]:hover {
 
   /*  Mobile version Works section start */
   .works {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;
     height: auto;
-    padding: 15px;
+    margin: 0 auto;
+    padding: 15px 24px;
   }
 
   #works-title {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
+    margin: 0 auto;
     height: auto;
-    padding: 10px 0;
+    padding: 10px 24px;
+
   }
 
   #works-title-text-1 {
-    text-align: left;
+    align-self: start;
+    font-family: "Crete Round", sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 44px;
@@ -968,8 +972,7 @@ input[type=text]:hover {
   }
 
   .works-title-text {
-    align-self: stretch;
-    text-align: center;
+    align-self: center;
     font-family: "Crete Round", sans-serif;
     font-size: 40px;
     font-weight: 400;
@@ -977,22 +980,20 @@ input[type=text]:hover {
     color: black;
     letter-spacing: 0;
     margin: 2px 0;
-    padding: 2px 0;
+    padding: 4px 6px;
   }
 
   #works-title-img {
     width: 327px;
     height: 237px;
-    height: 20px;
-    flex: 1 1 50%;
   }
 
   .card-1 {
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
+    
   }
 
   .style-1 > img {
@@ -1000,8 +1001,8 @@ input[type=text]:hover {
   }
 
   #div-1--left > img {
-    width: 100%;
-    height: 237px;
+    width: 327px;
+    height: auto;
   }
 
   #div-1--left {
@@ -1042,7 +1043,7 @@ input[type=text]:hover {
   }
 
   .card-2-1 {
-    width: 80%;
+    width: 95%;
     height: auto;
   }
 
