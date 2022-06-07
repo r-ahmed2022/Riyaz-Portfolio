@@ -342,7 +342,8 @@ body {
   border: 0;
 }
 
-.div-1--right-btn:hover {
+.div-1--right-btn:hover,
+.div-1--right-btn:focus {
   background: #000;
   color: #fff;
   transform: scale(1.2);
@@ -706,7 +707,9 @@ body {
 }
 
 #form-field-container > input[type=email]:hover,
-input[type=text]:hover {
+input[type=text]:hover,
+#form-field-container > input[type=email]:focus,
+input[type=text]:focus {
   padding-top: 10px;
   transition-duration: 0.2s;
 }
@@ -768,7 +771,7 @@ input[type=text]:hover {
   display: none;
 }
 
-@media All And (max-width: 500px) {
+@media (max-width: 700px) {
   body {
     margin: 0;
     padding: 0;
@@ -777,7 +780,7 @@ input[type=text]:hover {
   .container {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    width: 100%;
     height: auto;
     color: #fff;
   }
@@ -824,7 +827,8 @@ input[type=text]:hover {
     display: block;
   }
 
-  a.icon:hover {
+  #hamburger:hover,
+  .icon:focus {
     color: #f55800;
   }
 
@@ -938,29 +942,29 @@ input[type=text]:hover {
 
   /*  Mobile version Works section start */
   .works {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    width: 100%;
     height: auto;
-    padding: 5px;
     margin: 0 auto;
+    padding: 15px 24px;
   }
 
   #works-title {
+    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     justify-content: center;
-    width: 90%;
+    margin: 0 auto;
     height: auto;
-    flex-wrap: wrap;
-    padding: 10px 0;
+    padding: 10px 24px;
   }
 
   #works-title-text-1 {
-    text-align: left;
+    align-self: start;
+    font-family: "Crete Round", sans-serif;
     font-size: 32px;
     font-weight: 400;
     line-height: 44px;
@@ -971,8 +975,7 @@ input[type=text]:hover {
   }
 
   .works-title-text {
-    align-self: stretch;
-    text-align: center;
+    align-self: center;
     font-family: "Crete Round", sans-serif;
     font-size: 40px;
     font-weight: 400;
@@ -980,21 +983,19 @@ input[type=text]:hover {
     color: black;
     letter-spacing: 0;
     margin: 2px 0;
-    padding: 2px 0;
+    padding: 4px 6px;
   }
 
   #works-title-img {
     width: 327px;
-    height: 20px;
-    flex: 1 1 100%;
+    height: 237px;
   }
 
   .card-1 {
     width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0 auto;
   }
 
   .style-1 > img {
@@ -1003,13 +1004,19 @@ input[type=text]:hover {
 
   #div-1--left > img {
     width: 327px;
-    height: 237px;
+    height: auto;
+  }
+
+  #div-1--left {
+    width: 100%;
+    height: auto;
   }
 
   #div-1--right {
-    width: 90%;
+    width: 100%;
     height: auto;
     padding: 0 15px;
+    align-self: start;
   }
 
   #card-1-text {
@@ -1022,7 +1029,7 @@ input[type=text]:hover {
   }
 
   .card-2 {
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1030,7 +1037,7 @@ input[type=text]:hover {
   }
 
   .card-3 {
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1038,7 +1045,7 @@ input[type=text]:hover {
   }
 
   .card-2-1 {
-    width: 80%;
+    width: 95%;
     height: auto;
   }
 
@@ -1183,17 +1190,17 @@ input[type=text]:hover {
 
   /*  contact form mobile section */
   #contact-form {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
+    margin: 0 auto;
     padding: 10px 0;
   }
 
   #form-1 {
-    width: 90%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -1215,7 +1222,7 @@ input[type=text]:hover {
   }
 
   #form-field-container {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1224,7 +1231,7 @@ input[type=text]:hover {
   }
 
   #form-comments-section {
-    width: 90%;
+    width: 100%;
     height: auto;
   }
 
