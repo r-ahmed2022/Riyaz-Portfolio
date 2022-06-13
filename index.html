@@ -32,26 +32,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Riyaz's Portfolio</title>
     </head>
-  <body onload="cal();">
+  <body>
     <div class="container">
       <header class="site-header">
         <div id="title-text"><h3>
           <a class="logo-text" href="#">Riyaz Ahmed</a>
         </h3>
       </div>
-        <nav id="navbar">
-          <a class="nav-links" href="#">Portfolio</a>
-          <a class="nav-links" href="#">About</a>
-          <a class="nav-links" href="#">Contact</a>
-         <!----
-         <i id="menu" class="material-icons">mail</i></a>
-         <a href="#" id="menu">&#9993;</a>
-        ---> 
-         <a href="#" id="menu"><img src="images/mail.svg" alt="mail icon"></a>
-          <a href="javascript:void(0);" class="icon">
-          <i class="fa fa-bars" id="hamburger"></i>
-        </a>
-        </nav>
+      <nav id="navbar">
+        <a class="nav-links" href="#">Portfolio</a>
+        <a class="nav-links" href="#">About</a>
+        <a class="nav-links" href="#">Contact</a>
+        <a href="#" id="menu"><img src="images/mail.svg" alt="mail icon"></a>
+         <div class="nav-mobile" id="nav-mobile">
+          <button id="btn-close" onclick="closebtn();">&times;</button>
+           <div class="overlay-content" >
+              <a class="nav" onclick="hide();" href="#main-content">Portfolio</a>
+              <a class="nav"  onclick="hide(); "href="#about">About</a>
+              <a class="nav"  onclick="hide();" href="#contact-form">Contact</a>
+            </div>
+        </div>
+        <button id="open-menu" onclick="showMenu();">
+          &#9776;
+         </button>
+      </nav>
       </header>
 
       <section id="home-content">
@@ -84,7 +88,7 @@
             </li>
           </ul>
         </div>
-        <div class="main-content">
+        <div class="main-content" id="main-content">
           <h1 class="name-text">Hey There. <br>
              I’m Riyaz</h1>
           <span class="job-title">I’am a Software Developer</span>
@@ -243,7 +247,7 @@
           </div>
             
           </section>
-          <section class="about">
+          <section class="about" id="about">
             
             <div class="about-text">
                <h2>
@@ -332,5 +336,6 @@
 
       </section>
       </div>
+      <script src="menu.js"></script>
   </body>
 </html>
