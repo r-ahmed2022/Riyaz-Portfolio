@@ -9,4 +9,5 @@ function showMenu() {
     
     function hide() {
         document.getElementById("nav-mobile").style.display = "none";
+        document.getElementById("open-menu").style.display = "intial";
          }
