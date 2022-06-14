@@ -62,7 +62,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  cursor: pointer;
+  }
 
    #nav-mobile{
     height:100%;
@@ -81,7 +82,7 @@ body {
   
   }
   
-  .overlay-content {
+  .mobile-menu {
     position: relative;
     top: 25%;
     width:70%;
@@ -119,6 +120,14 @@ body {
     font-size: 60px;
     background: #000;
     color: #fff;
+    cursor: pointer;
+  }
+
+  @media (min-width:700px)
+  {
+    #nav-mobile {
+      display: none;
+    }
   }
  
   #open-menu {
@@ -141,6 +150,7 @@ body {
   height: auto;
   color: white;
   margin: 3px;
+  cursor: pointer;
 }
 
 #navbar > #menu > img {

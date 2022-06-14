@@ -40,19 +40,19 @@
         </h3>
       </div>
       <nav id="navbar">
-        <a class="nav-links" href="#">Portfolio</a>
-        <a class="nav-links" href="#">About</a>
-        <a class="nav-links" href="#">Contact</a>
+        <a class="nav-links" href="#main-content">Portfolio</a>
+        <a class="nav-links" href="#about">About</a>
+        <a class="nav-links" href="#contact-form">Contact</a>
         <a href="#" id="menu"><img src="images/mail.svg" alt="mail icon"></a>
          <div class="nav-mobile" id="nav-mobile">
-          <button id="btn-close"  onclick="closebtn();">&times;</button>
-           <div class="overlay-content" >
-              <a class="nav" onclick="hide();" href="#main-content">Portfolio</a>
-              <a class="nav"  onclick="hide(); "href="#about">About</a>
-              <a class="nav"  onclick="hide();" href="#contact-form">Contact</a>
+            <button id="btn-close"  onclick="closebtn();">&times;</button>
+              <div class="mobile-menu" >
+                <a class="nav" onclick="hide();" href="#main-content">Portfolio</a>
+                <a class="nav"  onclick="hide();" href="#about">About</a>
+                <a class="nav"  onclick="hide();" href="#contact-form">Contact</a>
             </div>
         </div>
-        <button id="open-menu" onclick="showMenu();">
+        <button id="open-menu" onblur="resetState();" onclick="showMenu();">
           &#9776;
          </button>
       </nav>
