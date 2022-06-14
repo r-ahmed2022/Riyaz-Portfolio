@@ -1,7 +1,7 @@
 function showMenu() {     
-       document.getElementById("nav-mobile").style.width = "100%";
+       document.getElementById("nav-mobile").style.width = "80%";
+    
       }
-
       
       function closebtn() {
         document.getElementById("nav-mobile").style.width = "0%";
