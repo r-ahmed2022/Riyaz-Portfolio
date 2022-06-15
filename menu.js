@@ -1,4 +1,3 @@
-// eslint-disable-next-line linebreak-style
 const showMenu = document.getElementById('open-menu');
 showMenu.addEventListener('click', () => {
   document.getElementById('nav-mobile').style.width = '100%';
