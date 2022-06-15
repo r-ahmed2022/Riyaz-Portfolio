@@ -8,28 +8,24 @@ closebtn.addEventListener('click', () => {
   document.getElementById('nav-mobile').style.width = '0%';
 });
 
+function reloadBrowser() {
+  window.location.reload();
+}
+
 const portfolioElement = document.getElementById('portfolio');
 portfolioElement.addEventListener('click', () => {
   document.getElementById('nav-mobile').style.display = 'none';
-  // eslint-disable-next-line no-use-before-define
   reloadBrowser();
 });
 
-const aboutElement = document.getElementById('about');
+const aboutElement = document.getElementById('about-1');
 aboutElement.addEventListener('click', () => {
   document.getElementById('nav-mobile').style.display = 'none';
-  // eslint-disable-next-line no-use-before-define
   reloadBrowser();
 });
 
 const contactElement = document.getElementById('contact');
 contactElement.addEventListener('click', () => {
   document.getElementById('nav-mobile').style.display = 'none';
-  // eslint-disable-next-line no-use-before-define
   reloadBrowser();
 });
-
-function reloadBrowser() {
-  // eslint-disable-next-line no-restricted-globals
-  location.reload();
-}

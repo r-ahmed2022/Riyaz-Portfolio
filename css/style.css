@@ -68,6 +68,8 @@ body {
 #nav-mobile {
   height: 100%;
   width: 0;
+  display: flex;
+  justify-content: start;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -75,21 +77,22 @@ body {
   text-align: left;
   line-height: 30px;
   letter-spacing: 4px;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #3c3a39;
   overflow-x: hidden;
   transition: 0.5s;
 }
 
 .mobile-menu {
   position: relative;
-  top: 25%;
-  width: 70%;
+  top: 15%;
+  min-width: 90%;
+  height: auto;
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto', sans-serif;
   text-align: left;
-  margin-top: 30px;
-  margin-left: 100px;
+  margin-top: 0;
+  margin-left: 60px;
+  padding: 0 2.5em 0 1.5em;
   color: white;
 }
 
@@ -113,19 +116,32 @@ body {
   color: #f55800;
 }
 
-.nav {
-  border-bottom: 1px solid #f0f0f0;
-  width: 80%;
+.nav-mobile > .mobile-menu > .nav {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff5e1;
+  border-bottom: 0.5px solid #979493;
+  width: 100%;
 }
 
 .nav-mobile #btn-close {
   position: absolute;
   top: 20px;
-  right: 45px;
-  font-size: 60px;
-  background: #000;
-  color: #fff;
+  right: 100px;
+  font-size: 2em;
+  border: 0;
+  background: 0;
+  background-color: rgba(f, f, f, 0.6);
+  color: #979493;
   cursor: pointer;
+}
+
+#btn-close:hover {
+  color: #fff5e1;
 }
 
 @media (min-width: 700px) {
@@ -957,6 +973,7 @@ input[type=text]:focus {
     background-position: bottom right;
     background-size: auto 300px;
     margin-right: 0;
+    margin-top: 50px;
     padding: 60px 40px 5px 20px;
   }
 

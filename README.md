@@ -26,8 +26,8 @@ Select download Zip option from drop down menu.
 ## Authors
 👤 Riyaz
 
-GitHub: [https://github.com/r-ahmed2022/] 
-LinkedIn: [https://www.linkedin.com/in/riyaz-ahmed]
+(GitHub): [https://github.com/r-ahmed2022/] 
+(LinkedIn): [https://www.linkedin.com/in/riyaz-ahmed]
 
 ### Contributing
 
