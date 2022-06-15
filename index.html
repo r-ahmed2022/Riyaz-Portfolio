@@ -31,7 +31,7 @@
     rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Riyaz's Portfolio</title>
-    </head>
+      </head>
   <body>
     <div class="container">
       <header class="site-header">
@@ -45,14 +45,14 @@
         <a class="nav-links" href="#contact-form">Contact</a>
         <a href="#" id="menu"><img src="images/mail.svg" alt="mail icon"></a>
          <div class="nav-mobile" id="nav-mobile">
-            <button id="btn-close"  onclick="closebtn();" class="btn-close">&times;</button>
+            <button id="btn-close">&times;</button>
               <div class="mobile-menu" >
-                <a class="nav" onclick="hide();" href="#main-content">Portfolio</a>
-                <a class="nav"  onclick="hide();" href="#about">About</a>
-                <a class="nav"  onclick="hide();" href="#contact-form">Contact</a>
+                <a class="nav" id="portfolio" href="#main-content">Portfolio</a>
+                <a class="nav" id="about" href="#about">About</a>
+                <a class="nav" id="contact" href="#contact-form">Contact</a>
             </div>
         </div>
-        <button id="open-menu" onblur="resetState();" onclick="showMenu();">
+        <button id="open-menu">
           &#9776;
          </button>
       </nav>
@@ -336,6 +336,6 @@
 
       </section>
       </div>
-      <script src="menu.js"></script>
+      <script src="menu.js"></script> 
   </body>
 </html>
