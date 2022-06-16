@@ -827,6 +827,11 @@ input[type=text]:focus {
   font-weight: 700;
 }
 
+#errorMsg  {
+  margin: 5px 0;
+  color: #ff0000;
+}
+
 /* footer section starts */
 #footer-section {
   width: 100%;
