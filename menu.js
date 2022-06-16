@@ -55,6 +55,7 @@ emailValidator.addEventListener('click', (event) => {
     emailValue.focus();
     emailValue.style.border = 'thick solid #ff0000';
   } else {
+    document.getElementById('errorMsg').innerText = '';
     emailValue.style.border = 'thick solid #00ff00';
     document.getElementById('form-1').submit();
   }
