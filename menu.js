@@ -39,7 +39,7 @@ function checkLowerCase(str) {
   } else if (str === String(str).toLowerCase()) {
     errStr.valid = true;
   } else {
-    errStr.msg = 'Email should be only in Lower case';
+    errStr.msg = '<h1>Email should be only in Lower case</h1>';
   }
   return errStr;
 }
@@ -59,4 +59,20 @@ emailValidator.addEventListener('click', (event) => {
     emailValue.style.border = 'thick solid #00ff00';
     document.getElementById('form-1').submit();
   }
-});
+
+  let Ename ;
+  let Elastname;
+  const namefiled= document.getElementById('fname');
+  if(namefiled.value == "")    {
+      Ename='***Please enter name***';
+  }
+  document.getElementById('text').style.color= 'red'; 
+  document.getElementById('text').innerHTML=Ename;
+
+  const lname= document.getElementById('lname');
+  if(lname.value == "")    {
+      Elastname='***Please enter Lastname***';
+  }
+  document.getElementById('lerror').style.color= 'red'; 
+  document.getElementById('lerror').innerHTML=Elastname;
+}); 
