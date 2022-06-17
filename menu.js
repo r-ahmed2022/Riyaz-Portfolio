@@ -43,6 +43,54 @@ function checkLowerCase(str) {
   }
   return errStr;
 }
+const setError = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('#errorMsg');
+  errorDisplay.innerText = message;
+  inputControl.classList.add('error');
+  inputControl.classList.remove('success');
+};
+
+const setSuccess = (element) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.errorMsg');
+  errorDisplay.innerText = '';
+  inputControl.classList.add('success');
+  inputControl.classList.remove('error');
+};
+
+function checkotherFields() {
+  const fname = document.getElementById('fname').value.trim();
+  const lname = document.getElementById('lname').value.trim();
+  const comment = document.getElementById('comments').value.trim();
+  let valid;
+  if (fname === '') {
+    setError(fname, 'First Name is required');
+  }
+  if (fname.split('').length > 30) {
+    setError(fname, 'First Name should not exceed 30 characters');
+    valid = false;
+  }
+  setSuccess(fname);
+  if (lname === '') {
+    setError(fname, 'Last Name is required');
+    valid = false;
+  } if (fname.split('').length > 30) {
+    setError(fname, 'Last Name should not exceed 30 characters');
+    valid = false;
+  }
+  setSuccess(lname);
+  if (comment === '') {
+    setError(comment, 'Please add a message');
+    valid = false;
+  } else if (comment.split('').length > 500) {
+    setError(comment, 'Message should be short and do not exceed 500 characters');
+    valid = false;
+  }
+  setSuccess(comment);
+  valid = true;
+  return valid;
+}
 
 const emailValidator = document.getElementById('btn-5');
 emailValidator.addEventListener('click', (event) => {
@@ -57,7 +105,10 @@ emailValidator.addEventListener('click', (event) => {
   } else {
     document.getElementById('errorMsg').innerText = '';
     emailValue.style.border = 'thick solid #00ff00';
-    document.getElementById('form-1').submit();
+    const valid = checkotherFields();
+    if (valid) {
+      document.getElementById('form-1').submit();
+    }
   }
 
   let Ename ;
