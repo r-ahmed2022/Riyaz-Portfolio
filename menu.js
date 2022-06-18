@@ -31,7 +31,7 @@ contactElement.addEventListener('click', () => {
 });
 
 function checkLowerCase(str) {
-  const validChar = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  const validChar = /^[A-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Z0-9-]+(?:\.[A-Z0-9-]+)*$/;
   const errStr = {};
   if (!str.match(validChar)) {
     errStr.msg = 'Invalid email address';
@@ -39,13 +39,13 @@ function checkLowerCase(str) {
   } else if (str === String(str).toLowerCase()) {
     errStr.valid = true;
   } else {
-    errStr.msg = '<h1>Email should be only in Lower case</h1>';
+    errStr.msg = 'Email should be only in Lower case';
   }
   return errStr;
 }
 const setError = (element, message) => {
   const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('#errorMsg');
+  const errorDisplay = inputControl.querySelector('errorMsg');
   errorDisplay.innerText = message;
   inputControl.classList.add('error');
   inputControl.classList.remove('success');
@@ -59,11 +59,12 @@ const setSuccess = (element) => {
   inputControl.classList.remove('error');
 };
 
+// eslint-disable-next-line no-unused-vars
 function checkotherFields() {
   const fname = document.getElementById('fname').value.trim();
   const lname = document.getElementById('lname').value.trim();
   const comment = document.getElementById('comments').value.trim();
-  let valid;
+  let valid = true;
   if (fname === '') {
     setError(fname, 'First Name is required');
   }
@@ -105,25 +106,24 @@ emailValidator.addEventListener('click', (event) => {
   } else {
     document.getElementById('errorMsg').innerText = '';
     emailValue.style.border = 'thick solid #00ff00';
-    const valid = checkotherFields();
-    if (valid) {
-      document.getElementById('form-1').submit();
-    }
+    // eslint-disable-next-line spaced-comment
+    //const valid = checkotherFields();
+    document.getElementById('form-1').submit();
   }
 
-  let Ename ;
+  let Ename;
   let Elastname;
-  const namefiled= document.getElementById('fname');
-  if(namefiled.value == "")    {
-      Ename='***Please enter name***';
+  const namefiled = document.getElementById('fname');
+  if (namefiled.value === '') {
+    Ename = '***Please enter name***';
   }
-  document.getElementById('text').style.color= 'red'; 
-  document.getElementById('text').innerHTML=Ename;
+  document.getElementById('text').style.color = 'red';
+  document.getElementById('text').innerHTML = Ename;
 
-  const lname= document.getElementById('lname');
-  if(lname.value == "")    {
-      Elastname='***Please enter Lastname***';
+  const lname = document.getElementById('lname');
+  if (lname.value === '') {
+    Elastname = '***Please enter Lastname***';
   }
-  document.getElementById('lerror').style.color= 'red'; 
-  document.getElementById('lerror').innerHTML=Elastname;
-}); 
+  document.getElementById('lerror').style.color = 'red';
+  document.getElementById('lerror').innerHTML = Elastname;
+});

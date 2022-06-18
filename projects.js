@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 const projects = [
   {
     name: 'Multi-Post Stories',
