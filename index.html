@@ -16,7 +16,7 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Crete+Round&family=El+Messiri&family=Inter&family=Poppins:wght@100;700&family=Roboto:wght@100;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Crete+Round&family=El+Messiri&family=Inter:wght@100;400;700&family=Poppins:wght@100;700&family=Roboto:wght@100;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -48,10 +48,20 @@
          <a href="#" id="menu">&#9993;</a>
         ---> 
          <a href="#" id="menu"><img src="images/mail.svg" alt="mail icon"></a>
-          <a href="javascript:void(0);" class="icon">
+          <a class="icon" id="open-menu" >
           <i class="fa fa-bars"></i>
         </a>
         </nav>
+        <div id="nav-mobile" class="nav-mobile">
+          <a class="closebtn" id="closebtn">&times;</a>
+          <div class="mobile-menu">
+          <ul id="menu-list">
+              <li class="nav"><a id="portfolio">Portfolio</a></li>
+              <li class="nav"><a id="about">About</a> </li>
+              <li class="nav"><a id="contact">Contact</a></li>
+          </ul>
+           </div>
+         </div>
       </header>
 
       <section id="home-content">
@@ -332,5 +342,6 @@
 
       </section>
       </div>
+      <script src="js/mobile-menu.js"></script>
   </body>
 </html>
