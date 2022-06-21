@@ -69,24 +69,24 @@ body {
 }
 
 .nav-mobile {
-  height:100%;
+  height: 100%;
   width: 0;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  text-align:center;
-  line-height:30px;
-  letter-spacing:4px;
-  background-color:  #3C3A39;;
-  background-color:  #3C3A39;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 4px;
+  background-color: #3c3a39;
+  background-color: hsl(20, 3%, 23%);
   overflow-x: hidden;
   transition: 0.5s;
   display: flex;
   justify-content: start;
   align-items: start;
   padding: 0;
-  }
+}
 
 .mobile-menu {
   position: relative;
@@ -96,39 +96,50 @@ body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-top: 10px;
-  margin-left:20px;
+  margin-left: 20px;
   padding: 0 20px;
-  }
+}
 
-.mobile-menu > #menu-list{
-  list-style-type:none;
+.mobile-menu > #menu-list {
+  list-style-type: none;
   font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 700;
   line-height: 44px;
-  letter-spacing: 0em;
+  letter-spacing: 0;
   text-align: left;
-  }
+}
+
+.desktop-version-list > li {
+  margin: 2px;
+  padding: 0;
+}
 
 #menu-list > li {
- border-bottom: 1px solid #DFE1E6;;
-  
+  border-bottom: 1px solid #dfe1e6;
 }
 
 .nav {
- color: #DFE1E6;
+  color: #dfe1e6;
 }
+
 .nav-mobile a {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
   display: block;
   transition: 0.3s;
-  color: #FFF5E1;
+  color: #fff5e1;
 }
 
-.nav-mobile a:hover, .nav-mobile a:focus {
-  color: #FFF5E1;
+.card-B-btns > li > a {
+  text-decoration: none;
+  display: block;
+}
+
+.nav-mobile a:hover,
+.nav-mobile a:focus {
+  color: #fff5e1;
 }
 
 .nav-mobile .closebtn {
@@ -136,11 +147,6 @@ body {
   top: 20px;
   right: 45px;
   font-size: 60px;
-}
-
-.card-B-btns > li > a {
-  text-decoration: none;
-  display: block;
 }
 
 #navbar > a {
@@ -179,11 +185,6 @@ body {
 .desktop-version-list {
   list-style-type: none;
   align-self: center;
-}
-
-.desktop-version-list > li {
-  margin: 2px;
-  padding: 0;
 }
 
 .main-content {
@@ -372,15 +373,6 @@ body {
   order: 1;
   margin: 10px 0;
   padding: 0;
-}
-
-.about-skills-list > li {
-  text-align: left;
-  margin: 10px 4px;
-}
-
-.card-B-btns > ul > li {
-  margin: 5px;
 }
 
 #skill-text > ul > li {
@@ -895,10 +887,6 @@ input[type=text]:hover {
     display: block;
   }
 
-  #navbar a.icon:hover {
-    color: #f55800;
-  }
-
   #navbar > a.icon {
     display: block;
     position: relative;
@@ -910,21 +898,26 @@ input[type=text]:hover {
     cursor: pointer;
   }
 
+  #navbar a.icon:hover {
+    color: #f55800;
+  }
+
   .site-header > #navbar > a.nav-links,
   #menu {
     display: none;
   }
-  
-  .nav-mobile a {font-size: 32px}
+
+  .nav-mobile a { font-size: 32px; }
+
   .nav-mobile .closebtn {
-  font-size: 32px;
-  top: 15px;
-  right: 35px;
-  font-weight: 700;
+    font-size: 32px;
+    top: 15px;
+    right: 35px;
+    font-weight: 700;
   }
 
- #mobile-menu #menu-list {
-    color: #FFF5E1;
+  #mobile-menu #menu-list {
+    color: #fff5e1;
     width: 100%;
   }
 
@@ -1041,7 +1034,6 @@ input[type=text]:hover {
     margin: 0 auto;
     height: auto;
     padding: 10px 24px;
-
   }
 
   #works-title-text-1 {
@@ -1078,7 +1070,6 @@ input[type=text]:hover {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    
   }
 
   .style-1 > img {
@@ -1252,15 +1243,6 @@ input[type=text]:hover {
     font-weight: 400;
     letter-spacing: 0;
     text-align: center;
-  }
-
-  .about-skills-list > li {
-    margin: 10px 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    line-height: 35px;
-    letter-spacing: 0;
   }
 
   #skill-text {
