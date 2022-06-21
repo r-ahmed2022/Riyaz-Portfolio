@@ -850,6 +850,7 @@ input[type=text]:hover {
     width: 100%;
     height: auto;
     color: #fff;
+    padding: 0;
   }
 
   .site-header {
