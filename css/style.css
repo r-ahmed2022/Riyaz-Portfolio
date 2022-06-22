@@ -92,8 +92,6 @@ body {
   position: relative;
   top: 15%;
   width: 90%;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-top: 10px;
   margin-left: 20px;
@@ -120,7 +118,7 @@ body {
 }
 
 #menu-list > li {
-  border-bottom: 1px solid #dfe1e6;
+  border-bottom: 1px solid #6f6c6b;
 }
 
 .nav {
