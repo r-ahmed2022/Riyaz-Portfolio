@@ -336,8 +336,8 @@ body {
   width: auto;
   height: auto;
   flex: 1;
-  margin: 0 10px 0 10px;
-  padding-left: 25px;
+  margin: 0 5px 0 10px;
+  padding: 5px 0 0 10px;
 }
 
 .works-title-text {
@@ -348,8 +348,9 @@ body {
   letter-spacing: 0;
   text-align: left;
   flex: none;
-  margin-bottom: 5px;
+  margin: 5px 5px 0 0;
   padding-bottom: 10px;
+  padding-right: 0;
   padding-left: 10px;
   order: 0;
 }
@@ -365,7 +366,7 @@ body {
   order: 0;
   flex: 1 1 100%;
   margin: 14px 0 5px 5px;
-  padding: 5px;
+  padding: 5px 0;
 }
 
 #skill-text {
