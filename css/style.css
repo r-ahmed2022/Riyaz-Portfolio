@@ -115,6 +115,10 @@ body {
   padding: 0;
 }
 
+.about-skills-list > li {
+  margin: 10px 0;
+}
+
 #menu-list > li {
   border-bottom: 1px solid #dfe1e6;
 }
@@ -333,8 +337,8 @@ body {
   width: auto;
   height: auto;
   flex: 1;
-  margin: 0 10px 5px 15px;
-  padding: 5px;
+  margin: 0 10px 0 10px;
+  padding-left: 25px;
 }
 
 .works-title-text {
@@ -347,6 +351,7 @@ body {
   flex: none;
   margin-bottom: 5px;
   padding-bottom: 10px;
+  padding-left: 10px;
   order: 0;
 }
 
@@ -369,7 +374,7 @@ body {
   width: 297px;
   height: 40px;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   order: 1;
   margin: 10px 0;
   padding: 0;
