@@ -115,6 +115,11 @@ body {
   padding: 0;
 }
 
+.about-skills-list > li {
+  margin: 10px 0;
+  padding: -10px;
+}
+
 #menu-list > li {
   border-bottom: 1px solid #dfe1e6;
 }
@@ -830,6 +835,40 @@ input[type=text]:hover {
   display: none;
 }
 
+/* popup dialog styling */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+  border: 2px solid gray;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+  cursor: pointer;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow: auto;
+  background: #fff;
+  cursor: default;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+/* popup dialog styling ends */
+
 @media All And (max-width: 500px) {
   body {
     margin: 0;
@@ -1171,20 +1210,19 @@ input[type=text]:hover {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0;
-    text-align: left;
     margin: 20px 0;
     padding: 0;
     align-self: start;
   }
 
   .div-seperator {
-    margin: 5px;
+    margin: 5px 0;
     width: auto;
     height: 250px;
     background-image: url("../images/about.svg");
-    background-size: auto 150px;
+    background-size: auto 175px;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: right;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1192,7 +1230,9 @@ input[type=text]:hover {
   }
 
   #divider {
-    width: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     height: 1px;
     align-self: flex-end;
     text-align: center;
@@ -1205,7 +1245,6 @@ input[type=text]:hover {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: 0 auto;
     padding: 30px;
   }
 
@@ -1243,6 +1282,11 @@ input[type=text]:hover {
     font-weight: 400;
     letter-spacing: 0;
     text-align: center;
+  }
+
+  #skills {
+    padding: 0;
+    margin: 0;
   }
 
   #skill-text {
