@@ -88,14 +88,20 @@ body {
   padding: 0;
 }
 
+@media (min-width: 501px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
 .mobile-menu {
   position: relative;
-  top: 15%;
+  top: 5%;
   width: 90%;
   text-align: center;
   margin-top: 10px;
-  margin-left: 20px;
-  padding: 0 20px;
+  margin-left: 15px;
+  padding: 0 10px;
 }
 
 .mobile-menu > #menu-list {
@@ -917,7 +923,7 @@ input[type=text]:hover {
   .nav-mobile .closebtn {
     font-size: 32px;
     top: 15px;
-    right: 35px;
+    right: 45px;
     font-weight: 700;
   }
 
