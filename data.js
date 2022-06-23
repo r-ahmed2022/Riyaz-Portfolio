@@ -57,9 +57,29 @@ const buildCard1 = (projects) => {
 
 projects.forEach((projectPage) => buildCard1(projectPage));
 
+const modal = document.createElement('div');
+modal.setAttribute('class', 'modal');
+modal.setAttribute('id', 'modal1');
+const modaldialog = document.createElement('div');
+modal.append(modaldialog);
+modaldialog.setAttribute('class', 'modal-dialog');
+const name = document.createElement('h2');
+modaldialog.append(name);
+const ul = document.createElement('ul');
+for (let i = 0; i < projects.languages.length;) {
+  const li = document.createElement('li');
+  const a1 = document.createElement('a');
+  a1.setAttribute('class', 'read-text');
+  a1.innerHTML = projects.languages[i];
+  li.append(a1);
+  ul.append(li);
+  // eslint-disable-next-line no-plusplus
+  i++;
+}
+
 const displayProject = document.querySelectorAll('[data-open]');
 // eslint-disable-next-line no-unused-vars
 const isVisible = 'is-visible';
 displayProject.addEventListener('click', () => {
-  alert('display project');
+
 });
