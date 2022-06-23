@@ -80,7 +80,7 @@ body {
   letter-spacing: 4px;
   background-color: #3c3a39;
   background-color: hsl(20, 3%, 23%);
-  overflow-x: hidden;
+  overflow: hidden;
   transition: 0.5s;
   display: flex;
   justify-content: start;
