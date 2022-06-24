@@ -825,6 +825,26 @@ input[type=text]:hover {
   font-weight: 700;
 }
 
+#form-field-container.success input {
+  border: 3px solid #09c372;
+}
+
+#form-comments-section.success input {
+  border: 3px solid #09c372;
+}
+
+#form-field-container.error input {
+  border: 3px solid #ff3860;
+}
+
+#form-comments-section.error input {
+  border: 3px solid #ff3860;
+}
+
+.errorMsg {
+  color: #ff3860;
+}
+
 /* footer section starts */
 #footer-section {
   width: 100%;
