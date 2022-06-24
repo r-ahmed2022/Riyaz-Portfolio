@@ -16,7 +16,6 @@ const setError = (element, message) => {
 const setSuccess = (element) => {
   const inputControl = element.parentElement;
   const errorDisplay = inputControl.querySelector('.errorMsg');
-
   errorDisplay.innerText = '';
   inputControl.classList.add('success');
   inputControl.classList.remove('error');
@@ -24,7 +23,7 @@ const setSuccess = (element) => {
 
 let submitPt = 0;
 
-const validateInputs = () => {
+const validateForm = () => {
   const firstname = fname.value.trim();
   const lastname = lname.value.trim();
   const emailField = email.value.trim();
@@ -33,7 +32,7 @@ const validateInputs = () => {
   if (firstname === '') {
     setError(fname, 'first name is required');
     return;
-  } if (fname.split('').length > 30) {
+  } if (firstname.split('').length > 30) {
     setError(fname, 'first name should not exceed 30 characters');
     return;
   }
@@ -43,7 +42,7 @@ const validateInputs = () => {
   if (lastname === '') {
     setError(lname, 'last name is required');
     return;
-  } if (lname.split('').length > 30) {
+  } if (lastname.split('').length > 30) {
     setError(lname, 'last name should not exceed 30 characters');
     return;
   }
@@ -73,8 +72,9 @@ const validateInputs = () => {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  validateInputs();
-  if (submitPt === 3) {
+  e.stopPropagation();
+  validateForm();
+  if (submitPt >= 3) {
     form.submit();
   } else {
     submitPt = 0;

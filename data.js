@@ -60,7 +60,7 @@ const buildCard1 = (projects) => {
 
 projects.forEach((projectPage) => buildCard1(projectPage));
 
-const createDialog = (projects) => {
+const createDialog = () => {
   const body = document.querySelector('body');
   const modal = document.createElement('div');
   modal.setAttribute('class', 'modal');
@@ -82,7 +82,7 @@ const createDialog = (projects) => {
   closebtn.innerHTML = '&times;';
   header.append(closebtn);
   const ul = document.createElement('ul');
-  for (let j = 0; j < projects.languages.length;) {
+  for (let j = 0; j < 3;) {
     const li = document.createElement('li');
     const a1 = document.createElement('a');
     a1.setAttribute('class', 'read-text');
@@ -98,7 +98,7 @@ const createDialog = (projects) => {
   leftDiv.setAttribute('class', 'left-div');
   const projectImage = document.createElement('img');
   projectImage.setAttribute('class', 'project-img');
-  projectImage.setAttribute('src', projects.projectimage);
+  projectImage.setAttribute('src', `${projects.projectimage}`);
   leftDiv.append(projectImage);
   modaldialog.append(leftDiv);
   const rightDiv = document.createElement('div');
@@ -131,7 +131,7 @@ for (const btn of displayProject) {
   });
 }
 
-projects.forEach(createDialog(projects));
+createDialog();
 
 const hideProject = document.querySelectorAll('[data-close]');
 // eslint-disable-next-line no-restricted-syntax
