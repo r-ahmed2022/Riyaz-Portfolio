@@ -21,7 +21,7 @@ const setSuccess = (element) => {
   inputControl.classList.remove('error');
 };
 
-let submitPt = 0;
+let counter = 0;
 
 const validateForm = () => {
   const firstname = fname.value.trim();
@@ -37,7 +37,7 @@ const validateForm = () => {
     return;
   }
   setSuccess(fname);
-  submitPt += 1;
+  counter += 1;
 
   if (lastname === '') {
     setError(lname, 'last name is required');
@@ -47,7 +47,7 @@ const validateForm = () => {
     return;
   }
   setSuccess(lname);
-  submitPt += 1;
+  counter += 1;
 
   if (emailField === '') {
     setError(email, 'Email is required');
@@ -57,7 +57,7 @@ const validateForm = () => {
     return;
   }
   setSuccess(email);
-  submitPt += 1;
+  counter += 1;
 
   // for message validation
   if (commentValue === '') {
@@ -66,7 +66,7 @@ const validateForm = () => {
     setError(comments, 'Message should be short and do not exceed 500 characters');
   } else {
     setSuccess(comments);
-    submitPt += 1;
+    counter += 1;
   }
 };
 
@@ -74,9 +74,9 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   e.stopPropagation();
   validateForm();
-  if (submitPt >= 3) {
+  if (counter >= 3) {
     form.submit();
   } else {
-    submitPt = 0;
+    counter = 0;
   }
 });
