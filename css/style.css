@@ -12,8 +12,8 @@
 }
 
 body {
-   margin: 0;
-   padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
@@ -872,67 +872,66 @@ input[type=text]:hover {
 
 /* popup dialog styling */
 
- .modal {
-     position: fixed;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     background: var(--black);
-     border: 2px solid gray;
-     visibility: hidden;
-     opacity: 0;
-     transition: all 0.35s ease-in;
-     cursor: pointer;
-     z-index: 5;
- }
- 
- .modal-dialog {
-     position: relative;
-     max-width: 80%;
-     max-height: 100vh;
-     overflow: auto;
-     background: #fff;
-     cursor: default;
- }
- 
- .modal-dialog > * {
-     padding: 1rem;
- }
- 
- .title-header {
-     background: var(--lightgray);
-     display : flex;
-     justify-content: space-between;
-     align-items: center; 
-     font-size: var(--text);
-     
- }
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+  border: 2px solid gray;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+  cursor: pointer;
+  z-index: 5;
+}
 
- .header-title {
-    margin: 0;
-     padding: 0;
- }
- 
- .close-modal {
-     font-size: var(--text);
-     float: right;
-     cursor: pointer;
-     border: 0;
-     background: 0;
- }
- 
-  .modal p + p {
+.modal-dialog {
+  position: relative;
+  max-width: 80%;
+  max-height: 100vh;
+  overflow: auto;
+  background: #fff;
+  cursor: default;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+.title-header {
+  background: var(--lightgray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--text);
+}
+
+.header-title {
+  margin: 0;
+  padding: 0;
+}
+
+.close-modal {
+  font-size: var(--text);
+  float: right;
+  cursor: pointer;
+  border: 0;
+  background: 0;
+}
+
+.modal p + p {
   margin-top: 1rem;
 }
- 
- .modal.is-visible {
-    visibility: visible;
-    opacity: 1;
- }
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
 
 /* popup dialog styling ends */
 
@@ -952,7 +951,7 @@ input[type=text]:hover {
     color: #fff;
     padding: 0;
     margin: 0;
-      }
+  }
 
   .site-header {
     width: 100%;
@@ -962,7 +961,6 @@ input[type=text]:hover {
     display: flex;
     justify-content: start;
     align-items: end;
-        
   }
 
   .style-1 > h3 {
@@ -1135,7 +1133,7 @@ input[type=text]:hover {
     justify-content: center;
     height: auto;
     margin: 0 auto;
-   }
+  }
 
   #works-title {
     display: flex;
@@ -1214,7 +1212,7 @@ input[type=text]:hover {
     text-align: left;
     margin: 0;
     padding: 0;
-    }
+  }
 
   .card-2 {
     display: flex;
