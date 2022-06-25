@@ -818,20 +818,9 @@ input[type=text]:hover {
   font-weight: 700;
 }
 
-#form-field-container.success input {
-  border: 3px solid #09c372;
-}
-
-#form-comments-section.success input {
-  border: 3px solid #09c372;
-}
-
-#form-field-container.error input {
-  border: 3px solid #ff3860;
-}
-
-#form-comments-section.error input {
-  border: 3px solid #ff3860;
+.error {
+  font-size: 1.5rem;
+  color: red;
 }
 
 .errorMsg {
@@ -1452,7 +1441,7 @@ input[type=text]:hover {
   }
 
   #lname {
-    display: none;
+    visibility: hidden;
   }
 
   #comments {
@@ -1462,6 +1451,7 @@ input[type=text]:hover {
     font-size: 17px;
     padding: 20px 0;
     background: #fbf8f7;
+    margin-bottom: 10px;
   }
 
   /* contact form mobile section sends */
