@@ -426,8 +426,7 @@ body {
 .div-1--right-btn:hover {
   background: #000;
   color: #fff;
-  transform: scale(1.2);
-}
+  }
 
 .card-2 {
   grid-area: 5/1/8/13;
@@ -862,7 +861,6 @@ input[type=text]:hover {
      justify-content: center;
      align-items: center;
      background: var(--black);
-     border: 2px solid gray;
      visibility: hidden;
      opacity: 0;
      transition: all 0.35s ease-in;
@@ -874,9 +872,12 @@ input[type=text]:hover {
      position: relative;
      max-width: 80%;
      max-height: 100vh;
-     overflow: auto;
+     overflow: hidden;
      background: #fff;
      cursor: default;
+     display: flex;
+     flex-direction: column;
+     margin: 0 auto;
  }
  
  .modal-dialog > * {
@@ -884,22 +885,93 @@ input[type=text]:hover {
  }
  
  .title-header {
-     background: var(--lightgray);
+     width: 100%;
+     height: auto;
      display : flex;
-     justify-content: space-between;
+     align-items: stretch;
      align-items: center; 
      font-size: var(--text);
      
  }
 
- .header-title {
-    margin: 0;
-     padding: 0;
+ .mains {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
  }
+
+ .project-name {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .project-name > ul {
+  position: relative;
+  left: -7px;
+  margin: 0;
+  padding: 0;
+  display : flex;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+ }
+
+ .project-img {
+  width : 650px;
+  height: 448px;
+ }
+ .project-name > ul > li {
+   margin: 0 5px;
+   padding: 0 3px;
+ }
+
+ .left-div {
+  padding-top :0;
+
+ }
+
+ .right-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10px 0 20px;
+  padding: 0 ;
+ }
+
+ .live-section {
+  margin-top: 43px;
+ }
+
+ .project-details {
+font-family: 'Inter', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+position: relative;
+top: -19px;
+
+ }
+
+ .header-title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+
+    }
  
  .close-modal {
      font-size: var(--text);
-     float: right;
+     margin-left: auto;
      cursor: pointer;
      border: 0;
      background: 0;
@@ -1217,7 +1289,48 @@ input[type=text]:hover {
     width: 100%;
     height: auto;
   }
+ /* modal popup mobile */
 
+  .modal-dialog {
+   overflow-y: auto;
+  }
+
+  .header-title {
+     justify-content: center;
+  }
+
+ .mains {
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .left-div {
+   
+ }
+
+ .right-div  {
+  padding-top: 30px;
+ }
+
+ .project-details {
+  text-align: justify;
+ }
+
+ .project-img  {
+  display: block;
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+ }
+
+ .closebtn {
+  margin: 0;
+  position: relative;
+  top: 0;
+  right: 5px;
+ }
+
+  /* modal popup mobile end */
   .about {
     display: flex;
     flex-direction: column;

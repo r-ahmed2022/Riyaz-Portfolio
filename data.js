@@ -1,4 +1,5 @@
 /* eslint-disable no-restricted-syntax */
+const isVisible = 'is-visible';
 const projects = [
   {
     name: 'Multi-Post Stories',
@@ -60,11 +61,12 @@ const buildCard1 = (projects) => {
 
 projects.forEach((projectPage) => buildCard1(projectPage));
 
-const createDialog = (projects) => {
+const createDialog = (project) => {
   const body = document.querySelector('body');
   const modal = document.createElement('div');
   modal.setAttribute('class', 'modal');
   modal.setAttribute('id', 'modal1');
+  modal.classList.add('is-visible');
   body.append(modal);
   const modaldialog = document.createElement('div');
   modaldialog.setAttribute('class', 'modal-dialog');
@@ -72,82 +74,89 @@ const createDialog = (projects) => {
   const header = document.createElement('header');
   header.setAttribute('class', 'title-header');
   modaldialog.append(header);
+  const desc = document.createElement('div');
+  desc.setAttribute('class', 'project-name');
+  header.append(desc);
   const h2 = document.createElement('h2');
   h2.setAttribute('class', 'header-title');
-  h2.innerHTML = `${projects.name}`;
-  header.append(h2);
-  const closebtn = document.createElement('button');
-  closebtn.setAttribute('class', 'close-modal');
-  closebtn.setAttribute('data-close', 'data-close');
-  closebtn.innerHTML = '&times;';
-  header.append(closebtn);
+  h2.innerHTML = `${project.name}`;
+  desc.append(h2);
   const ul = document.createElement('ul');
-  for (let j = 0; j < projects.languages.length;) {
+  for (let j = 0; j < project.languages.length;) {
     const li = document.createElement('li');
     const a1 = document.createElement('a');
     a1.setAttribute('class', 'read-text');
-    a1.innerHTML = projects.languages[j];
+    a1.innerHTML = project.languages[j];
     li.append(a1);
     ul.append(li);
     // eslint-disable-next-line no-plusplus
     j++;
   }
 
-  header.append(ul);
+  desc.append(ul);
+  header.append(desc);
+  const closebtn = document.createElement('button');
+  closebtn.setAttribute('class', 'close-modal');
+  closebtn.setAttribute('data-close', 'close');
+  closebtn.innerHTML = '&times;';
+  header.append(closebtn);
+  const mainsection = document.createElement('section');
+  mainsection.setAttribute('class', 'mains')
+  mainsection.setAttribute('border', '2px solid gray');
+  modaldialog.append(mainsection);
   const leftDiv = document.createElement('div');
   leftDiv.setAttribute('class', 'left-div');
   const projectImage = document.createElement('img');
   projectImage.setAttribute('class', 'project-img');
-  projectImage.setAttribute('src', projects.projectimage);
+  projectImage.setAttribute('src', project.projectimage);
   leftDiv.append(projectImage);
-  modaldialog.append(leftDiv);
+  mainsection.append(leftDiv);
   const rightDiv = document.createElement('div');
   rightDiv.setAttribute('class', 'right-div');
-  modaldialog.append(rightDiv);
+  mainsection.append(rightDiv);
   const p = document.createElement('p');
   p.setAttribute('class', 'project-details');
-  p.innerHTML = projects.projectdetails;
+  p.innerHTML = project.projectdetails;
   rightDiv.append(p);
   const bottomDiv = document.createElement('div');
   bottomDiv.setAttribute('class', 'live-section');
   const btn1 = document.createElement('button');
   btn1.setAttribute('class', 'div-1--right-btn');
-  btn1.innerHTML = projects.liveVersion;
+  btn1.innerHTML = project.liveVersion;
   bottomDiv.append(btn1);
-  rightDiv.append(bottomDiv);
   const btn2 = document.createElement('button');
   btn2.setAttribute('class', 'div-1--right-btn');
-  btn2.innerHTML = projects.sourceLink;
+  btn2.innerHTML = project.sourceLink;
   bottomDiv.append(btn2);
   rightDiv.append(bottomDiv);
 };
 
 const displayProject = document.querySelectorAll('[data-open]');
-const isVisible = 'is-visible';
 
 for (const btn of displayProject) {
-  btn.addEventListener('click', () => {
-    document.getElementById('modal1').classList.add(isVisible);
+  btn.addEventListener('click', (e) => {
+    // eslint-disable-next-line spaced-comment
+    //document.querySelector('.modal').classList.add(isVisible);
+    e.stopPropagation();
+    projects.forEach((project) => createDialog(project));
   });
 }
 
-projects.forEach(createDialog(projects));
-
-const hideProject = document.querySelectorAll('[data-close]');
+const hideProject = document.querySelectorAll('[close]');
 // eslint-disable-next-line no-restricted-syntax
 for (const btn of hideProject) {
   btn.addEventListener('click', () => {
-    document.getElementById('modal1').classList.remove(isVisible);
+    document.querySelector('.modal').classList.remove(isVisible);
   });
 }
 
 document.addEventListener('click', (e) => {
   if (e.target === document.querySelector('.modal.is-visible'));
-  document.querySelector('.modal.is-visible').classList.remove(isVisible);
+  document.querySelector('.modal').classList.remove(isVisible);
 });
 
 document.addEventListener('keyup', (e) => {
   if (e.key === 'Escape' && document.querySelector('.modal.is-visible')) {
-    document.querySelector('.modal.is-visible').classList.remove(isVisible);
+    document.querySelector('.modal').classList.remove(isVisible);
   }
 });
