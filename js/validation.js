@@ -1,5 +1,6 @@
 const form = document.getElementById('form-1');
 const email = document.getElementById('email-field');
+// eslint-disable-next-line no-unused-vars
 const lname = document.getElementById('lname');
 const validateEmail = () => {
   if (email.value !== email.value.toLowerCase()) {
@@ -16,7 +17,6 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   e.stopPropagation();
   if (validateEmail()) {
-    lname.attributes.required = false;
     form.submit();
   }
 });
