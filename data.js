@@ -120,6 +120,7 @@ const createDialog = (project) => {
   btn1.setAttribute('class', 'div-1--right-btn');
   const liveimage = document.createElement('img');
   liveimage.setAttribute('class', 'live-image');
+  liveimage.setAttribute('src', 'images/live.svg');
   btn1.innerHTML = project.liveVersion;
   btn1.append(liveimage);
   bottomDiv.append(btn1);
@@ -127,8 +128,9 @@ const createDialog = (project) => {
   btn2.setAttribute('class', 'div-1--right-btn');
   const github = document.createElement('img');
   github.setAttribute('class', 'live-image');
-  btn2.append(github);
+  github.setAttribute('src', 'images/githubicon.svg');
   btn2.innerHTML = project.sourceLink;
+  btn2.append(github);
   bottomDiv.append(btn2);
   rightDiv.append(bottomDiv);
 };

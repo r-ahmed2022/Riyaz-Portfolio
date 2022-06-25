@@ -980,6 +980,11 @@ input[type=text]:hover {
   opacity: 1;
 }
 
+.live-image {
+  width: 10px;
+  height: 10px;
+}
+
 /* popup dialog styling ends */
 
 @media All And (max-width: 500px) {
