@@ -471,7 +471,7 @@ body {
   flex: 1 1 100%;
 }
 
-#btn-2 {
+.btn-2 {
   height: 47px;
   width: 100%;
   margin: 0;
