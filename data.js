@@ -95,11 +95,7 @@ const createDialog = (project) => {
 
   desc.append(ul);
   header.append(desc);
-  const closebtn = document.createElement('button');
-  closebtn.setAttribute('class', 'close-modal');
-  closebtn.setAttribute('data-close', 'close');
-  closebtn.innerHTML = '&times;';
-  header.append(closebtn);
+  header.innerHTML += '<button class="close-modal" aria-label="close modal" data-close>&times;</button>';
   const mainsection = document.createElement('section');
   mainsection.setAttribute('class', 'mains');
   mainsection.setAttribute('border', '2px solid gray');
@@ -122,10 +118,16 @@ const createDialog = (project) => {
   bottomDiv.setAttribute('class', 'live-section');
   const btn1 = document.createElement('button');
   btn1.setAttribute('class', 'div-1--right-btn');
+  const liveimage = document.createElement('img');
+  liveimage.setAttribute('class', 'live-image');
   btn1.innerHTML = project.liveVersion;
+  btn1.append(liveimage);
   bottomDiv.append(btn1);
   const btn2 = document.createElement('button');
   btn2.setAttribute('class', 'div-1--right-btn');
+  const github = document.createElement('img');
+  github.setAttribute('class', 'live-image');
+  btn2.append(github);
   btn2.innerHTML = project.sourceLink;
   bottomDiv.append(btn2);
   rightDiv.append(bottomDiv);
@@ -135,29 +137,25 @@ const displayProject = document.querySelectorAll('[data-open]');
 
 for (const btn of displayProject) {
   btn.addEventListener('click', (e) => {
-    // eslint-disable-next-line spaced-comment
-    //document.querySelector('.modal').classList.add(isVisible);
     e.stopPropagation();
     projects.forEach((project) => createDialog(project));
   });
 }
 
-const hideProject = document.querySelectorAll('[close]');
-
+const hideProject = document.querySelectorAll('[data-close]');
 for (const btn of hideProject) {
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    document.querySelector('.modal').classList.remove(isVisible);
+  btn.addEventListener('click', () => {
+    document.querySelector('.modal').classList.remove('is-visible');
   });
 }
 
 document.addEventListener('click', (e) => {
   if (e.target === document.querySelector('.modal.is-visible'));
-  document.querySelector('.modal').classList.remove(isVisible);
+  document.querySelector('.modal.is-visible').classList.remove(isVisible);
 });
 
 document.addEventListener('keyup', (e) => {
   if (e.key === 'Escape' && document.querySelector('.modal.is-visible')) {
-    document.querySelector('.modal').classList.remove(isVisible);
+    document.querySelector('.modal.is-visible').classList.remove(isVisible);
   }
 });
