@@ -6,19 +6,11 @@ const email = document.getElementById('email-field');
 const comments = document.getElementById('comments');
 
 const setError = (element, message) => {
-  const inputControl = element.parentElement;
+  const inputControl = element.parentElement.nextElementSibling;
   const errorDisplay = inputControl.querySelector('.errorMsg');
   errorDisplay.innerText = message;
   inputControl.classList.add('error');
   inputControl.classList.remove('success');
-};
-
-const setSuccess = (element) => {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.errorMsg');
-  errorDisplay.innerText = '';
-  inputControl.classList.add('success');
-  inputControl.classList.remove('error');
 };
 
 let counter = 0;
@@ -28,7 +20,6 @@ const validateForm = () => {
   const lastname = lname.value.trim();
   const emailField = email.value.trim();
   const commentValue = comments.value.trim();
-
   if (firstname === '') {
     setError(fname, 'first name is required');
     return;
@@ -36,7 +27,7 @@ const validateForm = () => {
     setError(fname, 'first name should not exceed 30 characters');
     return;
   }
-  setSuccess(fname);
+
   counter += 1;
 
   if (lastname === '') {
@@ -46,7 +37,6 @@ const validateForm = () => {
     setError(lname, 'last name should not exceed 30 characters');
     return;
   }
-  setSuccess(lname);
   counter += 1;
 
   if (emailField === '') {
@@ -56,23 +46,18 @@ const validateForm = () => {
     setError(email, 'Email should be in lowercase');
     return;
   }
-  setSuccess(email);
   counter += 1;
 
-  // for message validation
   if (commentValue === '') {
     setError(comments, 'Please add a message');
   } else if (commentValue.split('').length > 500) {
     setError(comments, 'Message should be short and do not exceed 500 characters');
-  } else {
-    setSuccess(comments);
-    counter += 1;
   }
+  counter += 1;
 };
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  e.stopPropagation();
   validateForm();
   if (counter >= 3) {
     form.submit();
