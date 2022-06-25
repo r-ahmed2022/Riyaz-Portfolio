@@ -430,7 +430,7 @@ body {
   background: #f55800;
   width: 124px;
   height: 40px;
-  margin-left: 5px;
+  margin: 5px 0 20px 0;
   order: 2;
   color: #fff;
   flex: none;
@@ -917,6 +917,8 @@ input[type=text]:hover {
 .project-name {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10px;
 }
 
 .project-img {
@@ -938,6 +940,10 @@ input[type=text]:hover {
 
 .live-section {
   margin-top: 43px;
+}
+
+.live-section > button {
+  margin: 0 10px 0 0;
 }
 
 .project-details {
@@ -983,6 +989,7 @@ input[type=text]:hover {
 .live-image {
   width: 10px;
   height: 10px;
+  background: 0;
 }
 
 /* popup dialog styling ends */
