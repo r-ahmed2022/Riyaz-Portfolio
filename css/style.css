@@ -221,7 +221,7 @@ body {
   font-family: 'Crete Round', sans-serif;
   text-align: left;
   font-style: normal;
-  font-weight: 400, regular;
+  font-weight: 400;
   font-size: 72px;
   line-height: 82px;
   margin: 5px 10px 5px 5px;
@@ -243,7 +243,7 @@ body {
   color: #fff;
   text-align: left;
   font-family: "Inter", sans-serif;
-  font-weight: 400, regular;
+  font-weight: 400;
   align-self: start;
   font-style: normal;
   font-size: 20px;
@@ -276,8 +276,7 @@ body {
 #skill-text > ul {
   display: flex;
   list-style: none;
-  padding: 0;
-  padding-left: 0 5px;
+  padding: 0 0 0 5px;
   margin: 0;
 }
 
@@ -352,7 +351,7 @@ body {
   flex: 1 1 100%;
   margin: 20px -5px;
   padding: 0;
-  justify-content: baseline;
+  justify-content: flex-start;
   align-items: start;
 }
 
@@ -1110,7 +1109,7 @@ input[type=text]:hover {
   .name-text {
     font-family: Crete Round, sans-serif;
     font-size: 56px;
-    font-weight: 400, regular;
+    font-weight: 400;
     line-height: 64px;
     letter-spacing: 0.3700000047683716px;
     text-align: left;
@@ -1131,9 +1130,9 @@ input[type=text]:hover {
   }
 
   .job-description {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    font-weight: 400, regular;
+    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0;
     text-align: left;
