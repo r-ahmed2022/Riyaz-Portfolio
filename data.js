@@ -101,7 +101,7 @@ const createDialog = (project) => {
   closebtn.innerHTML = '&times;';
   header.append(closebtn);
   const mainsection = document.createElement('section');
-  mainsection.setAttribute('class', 'mains')
+  mainsection.setAttribute('class', 'mains');
   mainsection.setAttribute('border', '2px solid gray');
   modaldialog.append(mainsection);
   const leftDiv = document.createElement('div');
@@ -145,7 +145,8 @@ for (const btn of displayProject) {
 const hideProject = document.querySelectorAll('[close]');
 // eslint-disable-next-line no-restricted-syntax
 for (const btn of hideProject) {
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
     document.querySelector('.modal').classList.remove(isVisible);
   });
 }
