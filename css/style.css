@@ -975,6 +975,7 @@ top: -19px;
      cursor: pointer;
      border: 0;
      background: 0;
+     color: lightgray;
  }
  
   .modal p + p {
@@ -1304,13 +1305,15 @@ top: -19px;
    align-items: center;
  }
 
- .left-div {
-   
- }
-
  .right-div  {
   padding-top: 30px;
  }
+
+ .live-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 
  .project-details {
   text-align: justify;
