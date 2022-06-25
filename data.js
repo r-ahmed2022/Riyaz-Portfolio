@@ -143,7 +143,7 @@ for (const btn of displayProject) {
 }
 
 const hideProject = document.querySelectorAll('[close]');
-// eslint-disable-next-line no-restricted-syntax
+
 for (const btn of hideProject) {
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
