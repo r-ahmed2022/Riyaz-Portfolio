@@ -16,7 +16,7 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link
-      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Crete+Round&family=El+Messiri&family=Inter&family=Poppins:wght@100;700&family=Roboto:wght@100;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Crete+Round&family=El+Messiri&family=Inter:wght@100;400;700&family=Poppins:wght@100;700&family=Roboto:wght@100;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -33,7 +33,22 @@
     <title>Riyaz's Portfolio</title>
   </head>
   <body>
-    <div class="container">
+       <div class="container">
+         <div class="modal"  id="modal1">
+                <div class="modal-dialog">
+                  <header class="modal-header"> 
+                      <h1>Modal Dialog</h1>
+                      <button class="close-modal" data-close>&times;</button> 
+                  </header>
+                  <section class="modal-body">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo repellendus reprehenderit accusamus totam ratione! Nesciunt, nemo dolorum recusandae ad ex nam similique dolorem ab perspiciatis qui. Facere, dignissimos. Nemo, ea.</p>
+                          <p>Nullam vitae enim vel diam elementum tincidunt a eget metus. Curabitur finibus vestibulum rutrum. Vestibulum semper tellus vitae tortor condimentum porta. Sed id ex arcu. Vestibulum eleifend tortor non purus porta dapibus</p>
+                  </section>
+                  <footer class="modal-footer"> 
+                      
+                  </footer>
+              </div>
+         </div>
       <header class="site-header">
         <div id="title-text"><h3>
           <a class="logo-text" href="#">Riyaz Ahmed</a>
@@ -47,11 +62,21 @@
          <i id="menu" class="material-icons">mail</i></a>
          <a href="#" id="menu">&#9993;</a>
         ---> 
-         <a href="#" id="menu"><img src="images/mail.svg" alt="projects"></a>
-          <a href="javascript:void(0);" class="icon">
+         <a href="#" id="menu"><img src="images/mail.svg" alt="mail icon"></a>
+          <a class="icon" id="open-menu" >
           <i class="fa fa-bars"></i>
         </a>
         </nav>
+        <div id="nav-mobile" class="nav-mobile">
+          <a class="closebtn" id="closebtn">&times;</a>
+          <div class="mobile-menu">
+          <ul id="menu-list">
+              <li class="nav"><a id="portfolio">Portfolio</a></li>
+              <li class="nav"><a id="about">About</a> </li>
+              <li class="nav"><a id="contact">Contact</a></li>
+          </ul>
+           </div>
+         </div>
       </header>
 
       <section id="home-content">
@@ -59,27 +84,27 @@
             <ul class="desktop-version-list">
             <li>
               <a class="social-link" href="#">
-              <img class="img-icons" src="images/github.svg" alt="github" />
+              <img class="img-icons" src="images/github.svg" alt="github logo" />
               </a>
             </li>
             <li>
               <a class="social-link" href="#">
-              <img class="img-icons" src="images/linkedin.svg" alt="linkedin" />
+              <img class="img-icons" src="images/linkedin.svg" alt="linkedin logo" />
               </a>
             </li>
             <li>
               <a class="social-link" href="#">
-              <img class="img-icons" src="images/angelist.svg" alt="angelist" />
+              <img class="img-icons" src="images/angelist.svg" alt="angelist logo" />
               </a>
             </li>
             <li>
               <a class="social-link" href="#">
-              <img class="img-icons" src="images/twitter.svg" alt="twitter" />
+              <img class="img-icons" src="images/twitter.svg" alt="twitter logo" />
               </a>
             </li>
             <li>
               <a class="social-link" href="#">
-              <img class="img-icons" src="images/medium.svg" alt="medium" />
+              <img class="img-icons" src="images/medium.svg" alt="medium logo" />
               </a>
             </li>
           </ul>
@@ -117,36 +142,20 @@
           </div>
         </section>
 
-        <section class="works">
-          <div id="works-title">
+        <section class="works" id="works">
+           <div id="works-title">
            <h2 class="works-title-text">My Recent Works</h2>
-           <img src="images/line.svg" id="works-title-img"  alt="my works profile">
+           <img src="images/line.svg" id="works-title-img"  alt=" horizontal line image">
           </div>
           <div class="card-1">
-                <div id="div-1--left">
-                <img id="card-1-img" src="images/recenttitle.svg" alt="recent works">
-                </div>
-                <div id="div-1--right">
-                <h2 class="works-title-text" id="works-title-text-1">Multi-Post Stories</h2>
-                <p id="card-1-text">A daily selection of privately personalized reads;
-                  no accounts or sign-ups required. has been the industry's standard dummy text ever 
-                  since the 1500s, 
-                when an unknown printer took a standard dummy text.</p>
-                <div id="skill-text">
-                    <ul>
-                    <li><a class="read-text" href="#">css</a></li>
-                    <li><a class="read-text" href="#">html</a></li>
-                    <li><a class="read-text" href="#">bootstrap</a></li>
-                    <li><a class="read-text" href="#">Ruby</a></li>
-                    </ul>
-                </div>
-                <button type="button" class="div-1--right-btn">See Project</button>
-                </div>
-                </div>
+                           
+
+          </div>
+             
           <div class="card-2">
           <div class="card-2-1" id="card-A">
-            <img src="images/card-2-img1.svg" id="img-1" alt="background image">
-            <button type="button" class="div-1--right-btn" id="btn-2">See Project</button> 
+            <img src="images/card-2-img1.svg" id="img-1" alt="Project image">
+            <button type="button" class="div-1--right-btn" id="btn-2" data-open="modal1">See Project</button> 
           </div>
           <div class="card-2-1" id="card-B">
               <div class="card-B-box">
@@ -264,7 +273,7 @@
             <div class="about-skills">
               <div>
                 <div class="style-1">
-                <img class="img-3" src="images/diamond.svg" alt="background image">
+                <img class="img-3" src="images/diamond.svg" alt="diamond shape icon">
                 <h3>Language</h3>
                 </div>
               <ul class="about-skills-list">
@@ -276,7 +285,7 @@
             </div>
                <div>
                 <div class="style-1">
-                <img class="img-3" src="images/rect.svg" alt="background image">
+                <img class="img-3" src="images/rect.svg" alt="rect ">
                 <h3>Frameworks</h3>
                 </div>
                 <ul class="about-skills-list">
@@ -287,7 +296,7 @@
                 <li>Selenium</li>
               </ul>
             </div>
-            <div>
+            <div id="skills">
               <div class="style-1">
                 <img class="img-3" src="images/diamond.svg" alt="background image">
                 <h3>Skills</h3>
@@ -315,8 +324,9 @@
                           <input type="email"  name="email-field" id="email-field" placeholder="Email address" required maxlength="30">
                           </div>
                         <div id="form-comments-section">
-                        <textarea id="comments" maxlength="500"  placeholder="Enter Text here" name="comments" required></textarea>
+                        <textarea id="comments" maxlength="500"  placeholder="Enter Text here" name="comments" required></textarea>           
                         <button class="div-1--right-btn" id="btn-5" type="submit">Get in touch</button>
+                        <span class="errorMsg"></span>
                         </div>
                     </form>
                     <div id="footer-section">
@@ -332,5 +342,8 @@
 
       </section>
       </div>
+      <script src="js/mobile-menu.js"></script>
+      <script  src="data.js"></script>
+      <script  src="js/validation.js"></script> 
   </body>
 </html>
