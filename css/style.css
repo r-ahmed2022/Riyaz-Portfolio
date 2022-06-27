@@ -16,7 +16,9 @@ body {
 
 .container {
   margin: 0;
-  padding: 20px 0;
+  overflow: none;
+  padding: 0;
+  border: 0;
   width: 100%;
   height: 100vh;
 }
@@ -36,7 +38,7 @@ body {
   padding: 0;
   margin: 0;
   top: 0;
-  position: fixed;
+  right: 0;
 }
 
 .about-skills > div > h3 {
@@ -86,24 +88,29 @@ body {
   letter-spacing: 4px;
   background-color: #3c3a39;
   background-color: hsl(20, 3%, 23%);
-  overflow-x: hidden;
+  overflow: hidden;
   transition: 0.5s;
   display: flex;
   justify-content: start;
   align-items: start;
   padding: 0;
+  cursor: pointer;
+}
+
+@media (min-width: 501px) {
+  .nav-mobile {
+    display: none;
+  }
 }
 
 .mobile-menu {
   position: relative;
-  top: 15%;
+  top: 5%;
   width: 90%;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto', sans-serif;
   text-align: center;
   margin-top: 10px;
-  margin-left: 20px;
-  padding: 0 20px;
+  margin-left: 15px;
+  padding: 0 10px;
 }
 
 .mobile-menu > #menu-list {
@@ -132,7 +139,7 @@ body {
 }
 
 #menu-list > li {
-  border-bottom: 1px solid #dfe1e6;
+  border-bottom: 1px solid #6f6c6b;
 }
 
 .nav {
@@ -159,6 +166,7 @@ body {
 }
 
 .nav-mobile .closebtn {
+  color: #6f6c6b;
   position: absolute;
   top: 20px;
   right: 45px;
@@ -179,11 +187,14 @@ body {
   height: 18px;
 }
 
-#home-content {
+.home-content {
   display: flex;
   width: 100%;
   height: 100vh;
   background: #1c1a19;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .left-content {
@@ -211,7 +222,7 @@ body {
   text-align: left;
   width: 100%;
   min-height: auto;
-  margin: 5px 10px 15px 10px;
+  margin: 5px 0 15px 10px;
   padding: 100px 10px 120px 15px;
   flex: 1 1 100%;
 }
@@ -299,6 +310,7 @@ body {
   -ms-transform: rotate(-180deg);
   -webkit-transform: rotate(-2deg);
   margin: 0;
+  padding: 0;
   background-image: url("../images/Illustration-headerpic.png");
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -366,8 +378,8 @@ body {
   width: auto;
   height: auto;
   flex: 1;
-  margin: 0 5px 0 15px;
-  padding: 5px;
+  margin: 0 5px 0 10px;
+  padding: 5px 0 0 10px;
 }
 
 .works-title-text {
@@ -378,10 +390,10 @@ body {
   letter-spacing: 0;
   text-align: left;
   flex: none;
-  margin: 5px 0;
+  margin: 5px 5px 0 0;
   padding-bottom: 10px;
-  padding-left: 0;
-  order: 0;
+  padding-right: 0;
+  padding-left: 10px;
 }
 
 #card-1-text {
@@ -394,8 +406,7 @@ body {
   color: black;
   order: 0;
   flex: 1 1 100%;
-  margin: 8px 0 5px 5px;
-  padding: 5px 0;
+  margin: 14px 0 5px 5px;
 }
 
 #skill-text {
@@ -403,7 +414,7 @@ body {
   width: 297px;
   height: 40px;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   order: 1;
   margin: 10px 0;
   padding: 0;
@@ -1089,17 +1100,18 @@ input[type=text]:hover {
   .nav-mobile .closebtn {
     font-size: 32px;
     top: 15px;
-    right: 35px;
+    right: 45px;
     font-weight: 700;
   }
 
   #mobile-menu #menu-list {
     color: #fff5e1;
     width: 100%;
+    cursor: pointer;
   }
 
   #home-content {
-    width: auto;
+    width: 100%;
     height: auto;
   }
 
@@ -1108,14 +1120,14 @@ input[type=text]:hover {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: start;
-    width: calc(100vw - 5px);
+    width: 100%;
     height: 100vh;
     background-image: url("../images/Illustration-headerpic.png");
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: auto 300px;
-    margin-right: 0;
-    padding: 40px 30px 5px 20px;
+    margin: 0;
+    padding: 40px 0 5px 20px;
   }
 
   .name-text {
