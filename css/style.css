@@ -1,3 +1,10 @@
+:root {
+  --text: 1.5rem;
+  --lightgray: #efefef;
+  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+  --black: #000;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -123,6 +130,12 @@ body {
 
 .about-skills-list > li {
   margin: 10px 0;
+  padding: -10px;
+}
+
+.project-name > ul > li {
+  margin: 0 5px;
+  padding: 0 3px;
 }
 
 #menu-list > li {
@@ -219,7 +232,7 @@ body {
   font-family: 'Crete Round', sans-serif;
   text-align: left;
   font-style: normal;
-  font-weight: 400, regular;
+  font-weight: 400;
   font-size: 72px;
   line-height: 82px;
   margin: 5px 10px 5px 5px;
@@ -241,7 +254,7 @@ body {
   color: #fff;
   text-align: left;
   font-family: "Inter", sans-serif;
-  font-weight: 400, regular;
+  font-weight: 400;
   align-self: start;
   font-style: normal;
   font-size: 20px;
@@ -257,11 +270,25 @@ body {
   list-style: none;
 }
 
+.project-name > ul {
+  position: relative;
+  left: -7px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+}
+
 #skill-text > ul {
   display: flex;
   list-style: none;
+  padding: 0 0 0 5px;
   margin: 0;
-  padding-left: 5px;
 }
 
 .img-icons {
@@ -315,9 +342,10 @@ body {
 #works-title {
   grid-area: 1 / 1 / 2/ 13;
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 2px;
+  margin: 10px 0;
   flex: 1 1 100%;
 }
 
@@ -333,13 +361,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex: 1 1 100%;
-  margin: 0 -5px;
+  margin: 20px -5px;
   padding: 0;
+  justify-content: flex-start;
+  align-items: start;
 }
 
 #card-1-img {
   width: auto;
-  height: auto;
+  height: 100%;
 }
 
 #div-1--right {
@@ -364,7 +394,6 @@ body {
   padding-bottom: 10px;
   padding-right: 0;
   padding-left: 10px;
-  order: 0;
 }
 
 #card-1-text {
@@ -378,7 +407,6 @@ body {
   order: 0;
   flex: 1 1 100%;
   margin: 14px 0 5px 5px;
-  padding: 5px 0;
 }
 
 #skill-text {
@@ -413,7 +441,7 @@ body {
   background: #f55800;
   width: 124px;
   height: 40px;
-  margin-left: 5px;
+  margin: 5px 0 20px 0;
   order: 2;
   color: #fff;
   flex: none;
@@ -424,7 +452,6 @@ body {
 .div-1--right-btn:hover {
   background: #000;
   color: #fff;
-  transform: scale(1.2);
 }
 
 .card-2 {
@@ -455,7 +482,7 @@ body {
   flex: 1 1 100%;
 }
 
-#btn-2 {
+.btn-2 {
   height: 47px;
   width: 100%;
   margin: 0;
@@ -499,7 +526,7 @@ body {
 
 .btns-3 {
   width: auto;
-  margin: 4px 0;
+  margin: 4px;
   height: 40px;
   background: gray;
   opacity: 0.9;
@@ -568,8 +595,9 @@ body {
 }
 
 #img-1 {
-  width: auto;
-  height: calc(100% - 46px);
+  display: block;
+  width: 100%;
+  height: auto;
   object-fit: contain;
 }
 
@@ -847,6 +875,136 @@ input[type=text]:hover {
   display: none;
 }
 
+/* popup dialog styling */
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--black);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.modal-dialog {
+  position: relative;
+  max-width: 80%;
+  max-height: 100vh;
+  overflow: hidden;
+  background: #fff;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+.title-header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: stretch;
+  align-items: center;
+  font-size: var(--text);
+}
+
+.mains {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.project-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 10px;
+}
+
+.project-img {
+  width: 650px;
+  height: 448px;
+}
+
+.left-div {
+  padding-top: 0;
+}
+
+.right-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 10px 0 20px;
+  padding: 0;
+}
+
+.live-section {
+  margin-top: 43px;
+}
+
+.live-section > button {
+  margin: 0 10px 0 0;
+}
+
+.project-details {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+  text-align: left;
+  position: relative;
+  top: -19px;
+}
+
+.header-title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Crete Round', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.close-modal {
+  font-size: var(--text);
+  margin-left: auto;
+  cursor: pointer;
+  border: 0;
+  background: 0;
+  color: lightgray;
+}
+
+.modal p + p {
+  margin-top: 1rem;
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.live-image {
+  width: 10px;
+  height: 10px;
+  background: 0;
+}
+
+/* popup dialog styling ends */
+
 @media All And (max-width: 500px) {
   body {
     margin: 0;
@@ -858,8 +1016,11 @@ input[type=text]:hover {
     flex-direction: column;
     width: 100%;
     height: auto;
+    justify-content: stretch;
+    align-items: center;
     color: #fff;
     padding: 0;
+    margin: 0;
   }
 
   .site-header {
@@ -868,7 +1029,7 @@ input[type=text]:hover {
     background: #333;
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: end;
   }
 
@@ -887,6 +1048,8 @@ input[type=text]:hover {
     display: inline-block;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    position: relative;
+    left: -10px;
     font-weight: 700;
     width: auto;
     height: auto;
@@ -927,6 +1090,13 @@ input[type=text]:hover {
 
   .nav-mobile a { font-size: 32px; }
 
+  .closebtn {
+    margin: 0;
+    position: relative;
+    top: 0;
+    right: 5px;
+  }
+
   .nav-mobile .closebtn {
     font-size: 32px;
     top: 15px;
@@ -963,7 +1133,7 @@ input[type=text]:hover {
   .name-text {
     font-family: Crete Round, sans-serif;
     font-size: 56px;
-    font-weight: 400, regular;
+    font-weight: 400;
     line-height: 64px;
     letter-spacing: 0.3700000047683716px;
     text-align: left;
@@ -984,9 +1154,9 @@ input[type=text]:hover {
   }
 
   .job-description {
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    font-weight: 400, regular;
+    font-weight: 400;
     line-height: 24px;
     letter-spacing: 0;
     text-align: left;
@@ -1041,18 +1211,15 @@ input[type=text]:hover {
     justify-content: center;
     height: auto;
     margin: 0 auto;
-    padding: 15px 24px;
   }
 
   #works-title {
-    width: 90%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: center;
-    margin: 0 auto;
     height: auto;
-    padding: 10px 24px;
+    margin: 10px auto;
   }
 
   #works-title-text-1 {
@@ -1064,7 +1231,7 @@ input[type=text]:hover {
     color: black;
     letter-spacing: 0;
     margin: 2px 0;
-    padding: 2px 10px;
+    padding: 2px 0;
   }
 
   .works-title-text {
@@ -1076,19 +1243,22 @@ input[type=text]:hover {
     color: black;
     letter-spacing: 0;
     margin: 2px 0;
-    padding: 4px 6px;
+    padding: 4px 2px;
   }
 
   #works-title-img {
-    width: 327px;
+    display: block;
+    width: 100%;
     height: 237px;
   }
 
   .card-1 {
-    width: 90%;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+    margin: 10px auto;
   }
 
   .style-1 > img {
@@ -1096,7 +1266,7 @@ input[type=text]:hover {
   }
 
   #div-1--left > img {
-    width: 327px;
+    width: 93%;
     height: auto;
   }
 
@@ -1108,7 +1278,6 @@ input[type=text]:hover {
   #div-1--right {
     width: 100%;
     height: auto;
-    padding: 0 15px;
     align-self: start;
   }
 
@@ -1119,29 +1288,69 @@ input[type=text]:hover {
     line-height: 24px;
     letter-spacing: 0;
     text-align: left;
+    margin: 0;
+    padding: 0;
   }
 
   .card-2 {
-    width: 95%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    order: 0;
+    margin: 10px auto;
   }
 
   .card-3 {
-    width: 95%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0 auto;
   }
 
   .card-2-1 {
-    width: 95%;
+    width: 100%;
     height: auto;
   }
 
+  /* modal popup mobile */
+
+  .modal-dialog {
+    overflow-y: auto;
+  }
+
+  .header-title {
+    justify-content: center;
+  }
+
+  .mains {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .right-div {
+    padding-top: 30px;
+  }
+
+  .live-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .project-details {
+    text-align: justify;
+  }
+
+  .project-img {
+    display: block;
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  /* modal popup mobile end */
   .about {
     display: flex;
     flex-direction: column;
@@ -1190,20 +1399,19 @@ input[type=text]:hover {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0;
-    text-align: left;
     margin: 20px 0;
     padding: 0;
     align-self: start;
   }
 
   .div-seperator {
-    margin: 5px;
+    margin: 5px 0;
     width: auto;
     height: 250px;
     background-image: url("../images/about.svg");
-    background-size: auto 150px;
+    background-size: auto 175px;
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: right;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1211,7 +1419,9 @@ input[type=text]:hover {
   }
 
   #divider {
-    width: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     height: 1px;
     align-self: flex-end;
     text-align: center;
@@ -1224,7 +1434,6 @@ input[type=text]:hover {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    margin: 0 auto;
     padding: 30px;
   }
 
@@ -1262,6 +1471,11 @@ input[type=text]:hover {
     font-weight: 400;
     letter-spacing: 0;
     text-align: center;
+  }
+
+  #skills {
+    padding: 0;
+    margin: 0;
   }
 
   #skill-text {
